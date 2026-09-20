@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>苏沪耗时地铁 · 双视图</title>
+<link rel="stylesheet" href="vendor/maplibre-gl.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id="topbar">
+  <div class="brand">
+    <span class="logo">⏱</span>
+    <div>
+      <h1>苏沪耗时地铁</h1>
+      <p id="srcBadge">加载中…</p>
+    </div>
+  </div>
+  <div class="od">
+    <label>起点</label>
+    <select id="selOrigin"></select>
+    <button id="btnSwap" title="交换起终点">⇄</button>
+    <label>终点</label>
+    <select id="selDest"></select>
+    <label class="buf">高铁候车</label>
+    <select id="selBuffer">
+      <option value="15">15′</option>
+      <option value="20" selected>20′</option>
+      <option value="30">30′</option>
+    </select>
+  </div>
+</header>
+<main>
+  <section id="mapPanel">
+    <div id="map"></div>
+    <div id="pickCtl" class="overlay">
+      <button id="pickOrigin" class="pick">◎ 设为起点</button>
+      <button id="pickDest" class="pick active">◎ 设为终点</button>
+    </div>
+    <div id="isoLegend" class="overlay">
+      <div class="bands">
+        <span style="--c:#1a9850"></span><i>15′</i>
+        <span style="--c2:#91cf60"></span><i>30′</i>
+        <span style="--c3:#d9ef8b"></span><i>45′</i>
+        <span style="--c4:#fee08b"></span><i>60′</i>
+        <span style="--c5:#fc8d59"></span><i>90′</i>
+        <span style="--c6:#d73027"></span><i>90′+</i>
+      </div>
+      <p>等时面为枢纽时间插值，示意用</p>
+    </div>
+  </section>
+  <aside id="metroPanel">
+    <div class="panelHead">
+      <h2 id="metroTitle">时间地铁</h2>
+      <p id="metroSub"></p>
+    </div>
+    <div id="modeChips"></div>
+    <div id="metroWrap">
+      <svg id="metro" viewBox="0 0 800 660"></svg>
+    </div>
+    <div id="compare" class="overlay-card"></div>
+    <div id="rank"></div>
+  </aside>
+</main>
+<script src="vendor/maplibre-gl.js"></script>
+<script src="vendor/d3.min.js"></script>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>

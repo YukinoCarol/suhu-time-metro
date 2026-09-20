@@ -1,0 +1,532 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.6195,
+     31.3095
+    ]
+   },
+   "properties": {
+    "id": "gusu",
+    "name": "姑苏区（观前）",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.7114,
+     31.3137
+    ]
+   },
+   "properties": {
+    "id": "sip",
+    "name": "苏州工业园区（湖西）",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.4423,
+     31.3016
+    ]
+   },
+   "properties": {
+    "id": "snd",
+    "name": "苏州高新区（狮山）",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.624,
+     31.263
+    ]
+   },
+   "properties": {
+    "id": "wz",
+    "name": "吴中区（宝带桥南）",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.635,
+     31.407
+    ]
+   },
+   "properties": {
+    "id": "xc",
+    "name": "相城区（活力岛）",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.638,
+     31.156
+    ]
+   },
+   "properties": {
+    "id": "wj",
+    "name": "吴江区（松陵）",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.96,
+     31.386
+    ]
+   },
+   "properties": {
+    "id": "ks",
+    "name": "昆山市区",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.075,
+     31.33
+    ]
+   },
+   "properties": {
+    "id": "huaqiao",
+    "name": "花桥（地铁枢纽）",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.12,
+     31.447
+    ]
+   },
+   "properties": {
+    "id": "tc",
+    "name": "太仓市区",
+    "city": "苏州",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.6133,
+     31.3305
+    ]
+   },
+   "properties": {
+    "id": "stn",
+    "name": "苏州站",
+    "city": "苏州",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.618,
+     31.42
+    ]
+   },
+   "properties": {
+    "id": "szn",
+    "name": "苏州北站（京沪高铁）",
+    "city": "苏州",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.76,
+     31.361
+    ]
+   },
+   "properties": {
+    "id": "syq",
+    "name": "苏州园区站",
+    "city": "苏州",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.5,
+     31.346
+    ]
+   },
+   "properties": {
+    "id": "sxq",
+    "name": "苏州新区站",
+    "city": "苏州",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.964,
+     31.366
+    ]
+   },
+   "properties": {
+    "id": "ksn",
+    "name": "昆山南站",
+    "city": "苏州",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     120.635,
+     30.918
+    ]
+   },
+   "properties": {
+    "id": "szs",
+    "name": "苏州南站（吴江·盛泽）",
+    "city": "苏州",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.108,
+     31.4465
+    ]
+   },
+   "properties": {
+    "id": "tcs",
+    "name": "太仓站（沪苏通）",
+    "city": "苏州",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.4695,
+     31.2335
+    ]
+   },
+   "properties": {
+    "id": "huangpu",
+    "name": "黄浦区（人民广场）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.4375,
+     31.1975
+    ]
+   },
+   "properties": {
+    "id": "xuhui",
+    "name": "徐汇区（徐家汇）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.4445,
+     31.2235
+    ]
+   },
+   "properties": {
+    "id": "jingan",
+    "name": "静安区（静安寺）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.402,
+     31.247
+    ]
+   },
+   "properties": {
+    "id": "putuo",
+    "name": "普陀区（真如）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.5,
+     31.2397
+    ]
+   },
+   "properties": {
+    "id": "lujiazui",
+    "name": "浦东·陆家嘴",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.587,
+     31.2045
+    ]
+   },
+   "properties": {
+    "id": "zhangjiang",
+    "name": "浦东·张江",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.3855,
+     31.1125
+    ]
+   },
+   "properties": {
+    "id": "minhang",
+    "name": "闵行区（莘庄）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.266,
+     31.3755
+    ]
+   },
+   "properties": {
+    "id": "jiading",
+    "name": "嘉定区（嘉定新城）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.227,
+     31.032
+    ]
+   },
+   "properties": {
+    "id": "songjiang",
+    "name": "松江区（松江新城）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.124,
+     31.151
+    ]
+   },
+   "properties": {
+    "id": "qingpu",
+    "name": "青浦区（青浦新城）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.489,
+     31.404
+    ]
+   },
+   "properties": {
+    "id": "baoshan",
+    "name": "宝山区（吴淞）",
+    "city": "上海",
+    "kind": "district",
+    "hsr": false
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.3185,
+     31.1945
+    ]
+   },
+   "properties": {
+    "id": "shq",
+    "name": "上海虹桥站",
+    "city": "上海",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.4555,
+     31.2495
+    ]
+   },
+   "properties": {
+    "id": "sh",
+    "name": "上海站",
+    "city": "上海",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.433,
+     31.1553
+    ]
+   },
+   "properties": {
+    "id": "shn",
+    "name": "上海南站",
+    "city": "上海",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     121.8045,
+     31.1505
+    ]
+   },
+   "properties": {
+    "id": "pvg",
+    "name": "浦东机场",
+    "city": "上海",
+    "kind": "airport",
+    "hsr": false
+   }
+  }
+ ]
+}
