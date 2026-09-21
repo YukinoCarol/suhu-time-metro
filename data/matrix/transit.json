@@ -42,3783 +42,3783 @@
   "gusu": {
    "sip": {
     "minutes": 49,
-    "km": 8.7
+    "km": null
    },
    "snd": {
-    "minutes": 123,
-    "km": 16.9
+    "minutes": 119,
+    "km": null
    },
    "wz": {
     "minutes": 41,
-    "km": 5.2
+    "km": null
    },
    "xc": {
     "minutes": 62,
-    "km": 10.9
+    "km": null
    },
    "wj": {
-    "minutes": 63,
-    "km": 17.2
+    "minutes": 64,
+    "km": null
    },
    "ks": {
-    "minutes": 96,
-    "km": 33.4
+    "minutes": 95,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 154,
-    "km": 43.3
+    "minutes": 143,
+    "km": null
    },
    "tc": {
-    "minutes": 154,
-    "km": 49.9
+    "minutes": 129,
+    "km": null
    },
    "stn": {
-    "minutes": 29,
-    "km": 2.4
+    "minutes": 28,
+    "km": null
    },
    "szn": {
-    "minutes": 70,
-    "km": 12.3
+    "minutes": 69,
+    "km": null
    },
    "syq": {
     "minutes": 63,
-    "km": 14.5
+    "km": null
    },
    "sxq": {
-    "minutes": 74,
-    "km": 12.1
+    "minutes": 75,
+    "km": null
    },
    "ksn": {
-    "minutes": 112,
-    "km": 33.3
+    "minutes": 109,
+    "km": null
    },
    "szs": {
-    "minutes": 144,
-    "km": 43.6
+    "minutes": 119,
+    "km": null
    },
    "tcs": {
-    "minutes": 155,
-    "km": 48.8
+    "minutes": 130,
+    "km": null
    },
    "huangpu": {
-    "minutes": 199,
-    "km": 81.2
+    "minutes": 209,
+    "km": null
    },
    "xuhui": {
-    "minutes": 215,
-    "km": 78.7
+    "minutes": 194,
+    "km": null
    },
    "jingan": {
-    "minutes": 226,
-    "km": 79.0
+    "minutes": 228,
+    "km": null
    },
    "putuo": {
     "minutes": 206,
-    "km": 74.7
+    "km": null
    },
    "lujiazui": {
-    "minutes": 134,
-    "km": 84.0
+    "minutes": 292,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 119,
-    "km": 92.7
+    "minutes": 270,
+    "km": null
    },
    "minhang": {
-    "minutes": 120,
-    "km": 76.1
+    "minutes": 269,
+    "km": null
    },
    "jiading": {
-    "minutes": 193,
-    "km": 61.8
+    "minutes": 192,
+    "km": null
    },
    "songjiang": {
-    "minutes": 238,
-    "km": 65.5
+    "minutes": 309,
+    "km": null
    },
    "qingpu": {
-    "minutes": 208,
-    "km": 51.1
+    "minutes": 200,
+    "km": null
    },
    "baoshan": {
-    "minutes": 253,
-    "km": 83.2
+    "minutes": 251,
+    "km": null
    },
    "shq": {
-    "minutes": 214,
-    "km": 67.7
+    "minutes": 212,
+    "km": null
    },
    "sh": {
-    "minutes": 200,
-    "km": 79.7
+    "minutes": 305,
+    "km": null
    },
    "shn": {
-    "minutes": 276,
-    "km": 79.2
+    "minutes": 258,
+    "km": null
    },
    "pvg": {
-    "minutes": 225,
-    "km": 114.1
+    "minutes": 221,
+    "km": null
    }
   },
   "sip": {
    "gusu": {
     "minutes": 48,
-    "km": 8.7
+    "km": null
    },
    "snd": {
-    "minutes": 140,
-    "km": 25.6
+    "minutes": 137,
+    "km": null
    },
    "wz": {
     "minutes": 72,
-    "km": 10.0
+    "km": null
    },
    "xc": {
     "minutes": 71,
-    "km": 12.7
+    "km": null
    },
    "wj": {
-    "minutes": 94,
-    "km": 18.9
+    "minutes": 95,
+    "km": null
    },
    "ks": {
-    "minutes": 77,
-    "km": 24.9
+    "minutes": 76,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 135,
-    "km": 34.6
+    "minutes": 124,
+    "km": null
    },
    "tc": {
-    "minutes": 180,
-    "km": 41.5
+    "minutes": 166,
+    "km": null
    },
    "stn": {
     "minutes": 60,
-    "km": 9.5
+    "km": null
    },
    "szn": {
     "minutes": 97,
-    "km": 14.8
+    "km": null
    },
    "syq": {
     "minutes": 44,
-    "km": 7.0
+    "km": null
    },
    "sxq": {
-    "minutes": 98,
-    "km": 20.4
+    "minutes": 101,
+    "km": null
    },
    "ksn": {
-    "minutes": 93,
-    "km": 24.7
+    "minutes": 89,
+    "km": null
    },
    "szs": {
-    "minutes": 174,
-    "km": 44.6
+    "minutes": 149,
+    "km": null
    },
    "tcs": {
-    "minutes": 176,
-    "km": 40.4
+    "minutes": 162,
+    "km": null
    },
    "huangpu": {
-    "minutes": 181,
-    "km": 72.6
+    "minutes": 270,
+    "km": null
    },
    "xuhui": {
-    "minutes": 186,
-    "km": 70.2
+    "minutes": 175,
+    "km": null
    },
    "jingan": {
-    "minutes": 188,
-    "km": 70.4
+    "minutes": 186,
+    "km": null
    },
    "putuo": {
-    "minutes": 168,
-    "km": 66.0
+    "minutes": 167,
+    "km": null
    },
    "lujiazui": {
     "minutes": 272,
-    "km": 75.4
+    "km": null
    },
    "zhangjiang": {
     "minutes": 250,
-    "km": 84.1
+    "km": null
    },
    "minhang": {
-    "minutes": 192,
-    "km": 67.9
+    "minutes": 125,
+    "km": null
    },
    "jiading": {
-    "minutes": 172,
-    "km": 53.1
+    "minutes": 171,
+    "km": null
    },
    "songjiang": {
-    "minutes": 287,
-    "km": 58.2
+    "minutes": 289,
+    "km": null
    },
    "qingpu": {
-    "minutes": 188,
-    "km": 43.2
+    "minutes": 182,
+    "km": null
    },
    "baoshan": {
-    "minutes": 237,
-    "km": 74.5
+    "minutes": 148,
+    "km": null
    },
    "shq": {
-    "minutes": 195,
-    "km": 59.2
+    "minutes": 193,
+    "km": null
    },
    "sh": {
-    "minutes": 182,
-    "km": 71.1
+    "minutes": 88,
+    "km": null
    },
    "shn": {
-    "minutes": 211,
-    "km": 70.8
+    "minutes": 148,
+    "km": null
    },
    "pvg": {
-    "minutes": 253,
-    "km": 105.5
+    "minutes": 251,
+    "km": null
    }
   },
   "snd": {
    "gusu": {
-    "minutes": 121,
-    "km": 16.9
+    "minutes": 128,
+    "km": null
    },
    "sip": {
-    "minutes": 142,
-    "km": 25.6
+    "minutes": 146,
+    "km": null
    },
    "wz": {
-    "minutes": 150,
-    "km": 17.8
+    "minutes": 139,
+    "km": null
    },
    "xc": {
-    "minutes": 159,
-    "km": 21.7
+    "minutes": 161,
+    "km": null
    },
    "wj": {
-    "minutes": 164,
-    "km": 24.7
+    "minutes": 159,
+    "km": null
    },
    "ks": {
-    "minutes": 188,
-    "km": 50.1
+    "minutes": 191,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 260,
-    "km": 60.2
+    "minutes": 251,
+    "km": null
    },
    "tc": {
-    "minutes": 258,
-    "km": 66.3
+    "minutes": 275,
+    "km": null
    },
    "stn": {
-    "minutes": 134,
-    "km": 16.6
+    "minutes": 139,
+    "km": null
    },
    "szn": {
     "minutes": 183,
-    "km": 21.3
+    "km": null
    },
    "syq": {
-    "minutes": 150,
-    "km": 30.9
+    "minutes": 155,
+    "km": null
    },
    "sxq": {
-    "minutes": 120,
-    "km": 7.4
+    "minutes": 115,
+    "km": null
    },
    "ksn": {
-    "minutes": 204,
-    "km": 50.1
+    "minutes": 206,
+    "km": null
    },
    "szs": {
-    "minutes": 252,
-    "km": 46.4
+    "minutes": 235,
+    "km": null
    },
    "tcs": {
-    "minutes": 288,
-    "km": 65.2
+    "minutes": 279,
+    "km": null
    },
    "huangpu": {
-    "minutes": 318,
-    "km": 97.9
+    "minutes": 434,
+    "km": null
    },
    "xuhui": {
-    "minutes": 288,
-    "km": 95.3
+    "minutes": 292,
+    "km": null
    },
    "jingan": {
-    "minutes": 312,
-    "km": 95.7
+    "minutes": 299,
+    "km": null
    },
    "putuo": {
-    "minutes": 437,
-    "km": 91.4
+    "minutes": 283,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 399,
-    "km": 100.8
+    "minutes": 436,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 377,
-    "km": 109.3
+    "minutes": 414,
+    "km": null
    },
    "minhang": {
-    "minutes": 311,
-    "km": 92.1
+    "minutes": 317,
+    "km": null
    },
    "jiading": {
-    "minutes": 284,
-    "km": 78.7
+    "minutes": 287,
+    "km": null
    },
    "songjiang": {
-    "minutes": 340,
-    "km": 80.5
+    "minutes": 346,
+    "km": null
    },
    "qingpu": {
-    "minutes": 300,
-    "km": 66.9
+    "minutes": 309,
+    "km": null
    },
    "baoshan": {
-    "minutes": 346,
-    "km": 100.0
+    "minutes": 351,
+    "km": null
    },
    "shq": {
-    "minutes": 351,
-    "km": 84.1
+    "minutes": 316,
+    "km": null
    },
    "sh": {
-    "minutes": 388,
-    "km": 96.5
+    "minutes": 307,
+    "km": null
    },
    "shn": {
-    "minutes": 329,
-    "km": 95.6
+    "minutes": 338,
+    "km": null
    },
    "pvg": {
-    "minutes": 321,
-    "km": 130.6
+    "minutes": 328,
+    "km": null
    }
   },
   "wz": {
    "gusu": {
     "minutes": 41,
-    "km": 5.2
+    "km": null
    },
    "sip": {
     "minutes": 73,
-    "km": 10.0
+    "km": null
    },
    "snd": {
-    "minutes": 143,
-    "km": 17.8
+    "minutes": 142,
+    "km": null
    },
    "xc": {
     "minutes": 84,
-    "km": 16.0
+    "km": null
    },
    "wj": {
-    "minutes": 81,
-    "km": 12.0
+    "minutes": 74,
+    "km": null
    },
    "ks": {
-    "minutes": 104,
-    "km": 34.7
+    "minutes": 103,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 162,
-    "km": 43.5
+    "minutes": 151,
+    "km": null
    },
    "tc": {
-    "minutes": 179,
-    "km": 51.4
+    "minutes": 188,
+    "km": null
    },
    "stn": {
     "minutes": 54,
-    "km": 7.6
+    "km": null
    },
    "szn": {
     "minutes": 98,
-    "km": 17.5
+    "km": null
    },
    "syq": {
     "minutes": 71,
-    "km": 16.9
+    "km": null
    },
    "sxq": {
-    "minutes": 85,
-    "km": 15.0
+    "minutes": 87,
+    "km": null
    },
    "ksn": {
-    "minutes": 120,
-    "km": 34.3
+    "minutes": 116,
+    "km": null
    },
    "szs": {
-    "minutes": 144,
-    "km": 38.4
+    "minutes": 120,
+    "km": null
    },
    "tcs": {
-    "minutes": 180,
-    "km": 50.3
+    "minutes": 183,
+    "km": null
    },
    "huangpu": {
-    "minutes": 146,
-    "km": 80.4
+    "minutes": 313,
+    "km": null
    },
    "xuhui": {
-    "minutes": 136,
-    "km": 77.7
+    "minutes": 202,
+    "km": null
    },
    "jingan": {
-    "minutes": 151,
-    "km": 78.1
+    "minutes": 203,
+    "km": null
    },
    "putuo": {
-    "minutes": 195,
-    "km": 74.0
+    "minutes": 193,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 159,
-    "km": 83.3
+    "minutes": 315,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 291,
-    "km": 91.8
+    "minutes": 293,
+    "km": null
    },
    "minhang": {
-    "minutes": 226,
-    "km": 74.3
+    "minutes": 288,
+    "km": null
    },
    "jiading": {
     "minutes": 199,
-    "km": 62.3
+    "km": null
    },
    "songjiang": {
-    "minutes": 162,
-    "km": 62.9
+    "minutes": 253,
+    "km": null
    },
    "qingpu": {
-    "minutes": 215,
-    "km": 49.2
+    "minutes": 208,
+    "km": null
    },
    "baoshan": {
     "minutes": 258,
-    "km": 83.6
+    "km": null
    },
    "shq": {
-    "minutes": 188,
-    "km": 66.5
+    "minutes": 299,
+    "km": null
    },
    "sh": {
-    "minutes": 232,
-    "km": 79.1
+    "minutes": 211,
+    "km": null
    },
    "shn": {
-    "minutes": 162,
-    "km": 77.9
+    "minutes": 312,
+    "km": null
    },
    "pvg": {
     "minutes": 250,
-    "km": 113.0
+    "km": null
    }
   },
   "xc": {
    "gusu": {
-    "minutes": 61,
-    "km": 10.9
+    "minutes": 59,
+    "km": null
    },
    "sip": {
-    "minutes": 70,
-    "km": 12.7
+    "minutes": 69,
+    "km": null
    },
    "snd": {
-    "minutes": 163,
-    "km": 21.7
+    "minutes": 162,
+    "km": null
    },
    "wz": {
-    "minutes": 84,
-    "km": 16.0
+    "minutes": 83,
+    "km": null
    },
    "wj": {
-    "minutes": 107,
-    "km": 27.9
+    "minutes": 116,
+    "km": null
    },
    "ks": {
-    "minutes": 114,
-    "km": 30.9
+    "minutes": 112,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 172,
-    "km": 42.6
+    "minutes": 161,
+    "km": null
    },
    "tc": {
-    "minutes": 182,
-    "km": 46.2
+    "minutes": 192,
+    "km": null
    },
    "stn": {
-    "minutes": 57,
-    "km": 8.8
+    "minutes": 56,
+    "km": null
    },
    "szn": {
     "minutes": 61,
-    "km": 2.2
+    "km": null
    },
    "syq": {
-    "minutes": 82,
-    "km": 12.9
+    "minutes": 81,
+    "km": null
    },
    "sxq": {
-    "minutes": 109,
-    "km": 14.5
+    "minutes": 111,
+    "km": null
    },
    "ksn": {
-    "minutes": 130,
-    "km": 31.6
+    "minutes": 126,
+    "km": null
    },
    "szs": {
-    "minutes": 186,
-    "km": 54.4
+    "minutes": 162,
+    "km": null
    },
    "tcs": {
-    "minutes": 183,
-    "km": 45.1
+    "minutes": 171,
+    "km": null
    },
    "huangpu": {
-    "minutes": 149,
-    "km": 81.6
+    "minutes": 320,
+    "km": null
    },
    "xuhui": {
-    "minutes": 213,
-    "km": 79.7
+    "minutes": 212,
+    "km": null
    },
    "jingan": {
-    "minutes": 258,
-    "km": 79.6
+    "minutes": 257,
+    "km": null
    },
    "putuo": {
-    "minutes": 119,
-    "km": 75.0
+    "minutes": 209,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 163,
-    "km": 84.2
+    "minutes": 231,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 147,
-    "km": 93.2
+    "minutes": 243,
+    "km": null
    },
    "minhang": {
-    "minutes": 307,
-    "km": 78.5
+    "minutes": 130,
+    "km": null
    },
    "jiading": {
     "minutes": 208,
-    "km": 60.0
+    "km": null
    },
    "songjiang": {
-    "minutes": 151,
-    "km": 70.1
+    "minutes": 263,
+    "km": null
    },
    "qingpu": {
-    "minutes": 224,
-    "km": 54.5
+    "minutes": 218,
+    "km": null
    },
    "baoshan": {
-    "minutes": 121,
-    "km": 81.0
+    "minutes": 444,
+    "km": null
    },
    "shq": {
-    "minutes": 265,
-    "km": 69.1
+    "minutes": 101,
+    "km": null
    },
    "sh": {
-    "minutes": 355,
-    "km": 79.9
+    "minutes": 358,
+    "km": null
    },
    "shn": {
-    "minutes": 193,
-    "km": 80.8
+    "minutes": 183,
+    "km": null
    },
    "pvg": {
-    "minutes": 254,
-    "km": 114.7
+    "minutes": 253,
+    "km": null
    }
   },
   "wj": {
    "gusu": {
-    "minutes": 66,
-    "km": 17.2
+    "minutes": 64,
+    "km": null
    },
    "sip": {
-    "minutes": 96,
-    "km": 18.9
+    "minutes": 93,
+    "km": null
    },
    "snd": {
-    "minutes": 160,
-    "km": 24.7
+    "minutes": 154,
+    "km": null
    },
    "wz": {
-    "minutes": 77,
-    "km": 12.0
+    "minutes": 81,
+    "km": null
    },
    "xc": {
-    "minutes": 119,
-    "km": 27.9
+    "minutes": 108,
+    "km": null
    },
    "ks": {
-    "minutes": 136,
-    "km": 39.9
+    "minutes": 133,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 198,
-    "km": 45.8
+    "minutes": 181,
+    "km": null
    },
    "tc": {
-    "minutes": 208,
-    "km": 56.1
+    "minutes": 222,
+    "km": null
    },
    "stn": {
-    "minutes": 86,
-    "km": 19.5
+    "minutes": 76,
+    "km": null
    },
    "szn": {
-    "minutes": 119,
-    "km": 29.4
+    "minutes": 117,
+    "km": null
    },
    "syq": {
-    "minutes": 103,
-    "km": 25.6
+    "minutes": 101,
+    "km": null
    },
    "sxq": {
-    "minutes": 119,
-    "km": 24.9
+    "minutes": 122,
+    "km": null
    },
    "ksn": {
-    "minutes": 152,
-    "km": 38.8
+    "minutes": 146,
+    "km": null
    },
    "szs": {
-    "minutes": 106,
-    "km": 26.5
+    "minutes": 98,
+    "km": null
    },
    "tcs": {
-    "minutes": 209,
-    "km": 55.1
+    "minutes": 199,
+    "km": null
    },
    "huangpu": {
-    "minutes": 294,
-    "km": 79.6
+    "minutes": 249,
+    "km": null
    },
    "xuhui": {
-    "minutes": 237,
-    "km": 76.2
+    "minutes": 241,
+    "km": null
    },
    "jingan": {
-    "minutes": 288,
-    "km": 77.1
+    "minutes": 242,
+    "km": null
    },
    "putuo": {
-    "minutes": 227,
-    "km": 73.4
+    "minutes": 225,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 262,
-    "km": 82.5
+    "minutes": 260,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 318,
-    "km": 90.4
+    "minutes": 273,
+    "km": null
    },
    "minhang": {
-    "minutes": 293,
-    "km": 71.3
+    "minutes": 291,
+    "km": null
    },
    "jiading": {
-    "minutes": 247,
-    "km": 64.5
+    "minutes": 228,
+    "km": null
    },
    "songjiang": {
-    "minutes": 288,
-    "km": 57.8
+    "minutes": 287,
+    "km": null
    },
    "qingpu": {
-    "minutes": 219,
-    "km": 46.3
+    "minutes": 217,
+    "km": null
    },
    "baoshan": {
-    "minutes": 387,
-    "km": 85.4
+    "minutes": 368,
+    "km": null
    },
    "shq": {
-    "minutes": 231,
-    "km": 64.9
+    "minutes": 229,
+    "km": null
    },
    "sh": {
-    "minutes": 253,
-    "km": 78.4
+    "minutes": 364,
+    "km": null
    },
    "shn": {
-    "minutes": 428,
-    "km": 75.6
+    "minutes": 427,
+    "km": null
    },
    "pvg": {
-    "minutes": 275,
-    "km": 111.0
+    "minutes": 273,
+    "km": null
    }
   },
   "ks": {
    "gusu": {
-    "minutes": 93,
-    "km": 33.4
+    "minutes": 90,
+    "km": null
    },
    "sip": {
-    "minutes": 75,
-    "km": 24.9
+    "minutes": 74,
+    "km": null
    },
    "snd": {
-    "minutes": 185,
-    "km": 50.1
+    "minutes": 180,
+    "km": null
    },
    "wz": {
-    "minutes": 102,
-    "km": 34.7
+    "minutes": 101,
+    "km": null
    },
    "xc": {
-    "minutes": 113,
-    "km": 30.9
+    "minutes": 112,
+    "km": null
    },
    "wj": {
     "minutes": 130,
-    "km": 39.9
+    "km": null
    },
    "huaqiao": {
-    "minutes": 93,
-    "km": 12.6
+    "minutes": 75,
+    "km": null
    },
    "tc": {
-    "minutes": 130,
-    "km": 16.6
+    "minutes": 128,
+    "km": null
    },
    "stn": {
-    "minutes": 106,
-    "km": 33.5
+    "minutes": 105,
+    "km": null
    },
    "szn": {
-    "minutes": 139,
-    "km": 32.7
+    "minutes": 137,
+    "km": null
    },
    "syq": {
     "minutes": 55,
-    "km": 19.2
+    "km": null
    },
    "sxq": {
     "minutes": 144,
-    "km": 43.9
+    "km": null
    },
    "ksn": {
     "minutes": 29,
-    "km": 2.3
+    "km": null
    },
    "szs": {
-    "minutes": 206,
-    "km": 60.5
+    "minutes": 185,
+    "km": null
    },
    "tcs": {
-    "minutes": 126,
-    "km": 15.6
+    "minutes": 123,
+    "km": null
    },
    "huangpu": {
-    "minutes": 133,
-    "km": 51.3
+    "minutes": 134,
+    "km": null
    },
    "xuhui": {
-    "minutes": 126,
-    "km": 50.0
+    "minutes": 127,
+    "km": null
    },
    "jingan": {
     "minutes": 127,
-    "km": 49.5
+    "km": null
    },
    "putuo": {
     "minutes": 118,
-    "km": 44.7
+    "km": null
    },
    "lujiazui": {
     "minutes": 145,
-    "km": 53.8
+    "km": null
    },
    "zhangjiang": {
     "minutes": 158,
-    "km": 62.9
+    "km": null
    },
    "minhang": {
     "minutes": 149,
-    "km": 50.6
+    "km": null
    },
    "jiading": {
     "minutes": 123,
-    "km": 29.1
+    "km": null
    },
    "songjiang": {
     "minutes": 191,
-    "km": 46.8
+    "km": null
    },
    "qingpu": {
-    "minutes": 133,
-    "km": 30.4
+    "minutes": 136,
+    "km": null
    },
    "baoshan": {
-    "minutes": 184,
-    "km": 50.3
+    "minutes": 183,
+    "km": null
    },
    "shq": {
     "minutes": 144,
-    "km": 40.2
+    "km": null
    },
    "sh": {
-    "minutes": 136,
-    "km": 49.5
+    "minutes": 135,
+    "km": null
    },
    "shn": {
-    "minutes": 168,
-    "km": 51.8
+    "minutes": 167,
+    "km": null
    },
    "pvg": {
-    "minutes": 174,
-    "km": 84.4
+    "minutes": 203,
+    "km": null
    }
   },
   "huaqiao": {
    "gusu": {
-    "minutes": 142,
-    "km": 43.3
+    "minutes": 141,
+    "km": null
    },
    "sip": {
     "minutes": 125,
-    "km": 34.6
+    "km": null
    },
    "snd": {
-    "minutes": 243,
-    "km": 60.2
+    "minutes": 234,
+    "km": null
    },
    "wz": {
     "minutes": 151,
-    "km": 43.5
+    "km": null
    },
    "xc": {
     "minutes": 162,
-    "km": 42.6
+    "km": null
    },
    "wj": {
-    "minutes": 189,
-    "km": 45.8
+    "minutes": 183,
+    "km": null
    },
    "ks": {
-    "minutes": 75,
-    "km": 12.6
+    "minutes": 76,
+    "km": null
    },
    "tc": {
-    "minutes": 161,
-    "km": 13.7
+    "minutes": 148,
+    "km": null
    },
    "stn": {
     "minutes": 156,
-    "km": 43.9
+    "km": null
    },
    "szn": {
-    "minutes": 196,
-    "km": 44.5
+    "minutes": 195,
+    "km": null
    },
    "syq": {
-    "minutes": 104,
-    "km": 30.1
+    "minutes": 105,
+    "km": null
    },
    "sxq": {
-    "minutes": 201,
-    "km": 54.6
+    "minutes": 202,
+    "km": null
    },
    "ksn": {
-    "minutes": 87,
-    "km": 11.3
+    "minutes": 88,
+    "km": null
    },
    "szs": {
-    "minutes": 256,
-    "km": 62.1
+    "minutes": 243,
+    "km": null
    },
    "tcs": {
-    "minutes": 156,
-    "km": 13.3
+    "minutes": 154,
+    "km": null
    },
    "huangpu": {
-    "minutes": 122,
-    "km": 39.0
+    "minutes": 136,
+    "km": null
    },
    "xuhui": {
-    "minutes": 115,
-    "km": 37.5
+    "minutes": 129,
+    "km": null
    },
    "jingan": {
-    "minutes": 116,
-    "km": 37.1
+    "minutes": 130,
+    "km": null
    },
    "putuo": {
-    "minutes": 106,
-    "km": 32.4
+    "minutes": 120,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 134,
-    "km": 41.6
+    "minutes": 148,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 146,
-    "km": 50.6
+    "minutes": 160,
+    "km": null
    },
    "minhang": {
-    "minutes": 138,
-    "km": 38.2
+    "minutes": 151,
+    "km": null
    },
    "jiading": {
-    "minutes": 111,
-    "km": 18.8
+    "minutes": 125,
+    "km": null
    },
    "songjiang": {
-    "minutes": 167,
-    "km": 36.2
+    "minutes": 180,
+    "km": null
    },
    "qingpu": {
-    "minutes": 122,
-    "km": 20.4
+    "minutes": 132,
+    "km": null
    },
    "baoshan": {
-    "minutes": 173,
-    "km": 40.2
+    "minutes": 180,
+    "km": null
    },
    "shq": {
-    "minutes": 133,
-    "km": 27.6
+    "minutes": 147,
+    "km": null
    },
    "sh": {
-    "minutes": 125,
-    "km": 37.2
+    "minutes": 137,
+    "km": null
    },
    "shn": {
-    "minutes": 157,
-    "km": 39.2
+    "minutes": 169,
+    "km": null
    },
    "pvg": {
-    "minutes": 191,
-    "km": 72.2
+    "minutes": 205,
+    "km": null
    }
   },
   "tc": {
    "gusu": {
-    "minutes": 137,
-    "km": 49.9
+    "minutes": 141,
+    "km": null
    },
    "sip": {
-    "minutes": 177,
-    "km": 41.5
+    "minutes": 176,
+    "km": null
    },
    "snd": {
     "minutes": 240,
-    "km": 66.3
+    "km": null
    },
    "wz": {
-    "minutes": 162,
-    "km": 51.4
+    "minutes": 166,
+    "km": null
    },
    "xc": {
-    "minutes": 165,
-    "km": 46.2
+    "minutes": 169,
+    "km": null
    },
    "wj": {
     "minutes": 184,
-    "km": 56.1
+    "km": null
    },
    "ks": {
     "minutes": 128,
-    "km": 16.6
+    "km": null
    },
    "huaqiao": {
-    "minutes": 161,
-    "km": 13.7
+    "minutes": 150,
+    "km": null
    },
    "stn": {
-    "minutes": 133,
-    "km": 49.8
+    "minutes": 138,
+    "km": null
    },
    "szn": {
-    "minutes": 180,
-    "km": 47.7
+    "minutes": 184,
+    "km": null
    },
    "syq": {
-    "minutes": 157,
-    "km": 35.5
+    "minutes": 156,
+    "km": null
    },
    "sxq": {
     "minutes": 201,
-    "km": 59.9
+    "km": null
    },
    "ksn": {
-    "minutes": 139,
-    "km": 17.3
+    "minutes": 138,
+    "km": null
    },
    "szs": {
-    "minutes": 284,
-    "km": 74.8
+    "minutes": 244,
+    "km": null
    },
    "tcs": {
     "minutes": 23,
-    "km": 1.1
+    "km": null
    },
    "huangpu": {
-    "minutes": 155,
-    "km": 40.8
+    "minutes": 165,
+    "km": null
    },
    "xuhui": {
-    "minutes": 148,
-    "km": 41.0
+    "minutes": 158,
+    "km": null
    },
    "jingan": {
-    "minutes": 149,
-    "km": 39.6
+    "minutes": 133,
+    "km": null
    },
    "putuo": {
-    "minutes": 139,
-    "km": 34.8
+    "minutes": 149,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 167,
-    "km": 42.8
+    "minutes": 176,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 179,
-    "km": 51.9
+    "minutes": 189,
+    "km": null
    },
    "minhang": {
-    "minutes": 171,
-    "km": 44.9
+    "minutes": 180,
+    "km": null
    },
    "jiading": {
-    "minutes": 118,
-    "km": 16.0
+    "minutes": 129,
+    "km": null
    },
    "songjiang": {
-    "minutes": 200,
-    "km": 47.3
+    "minutes": 166,
+    "km": null
    },
    "qingpu": {
-    "minutes": 221,
-    "km": 32.9
+    "minutes": 145,
+    "km": null
    },
    "baoshan": {
-    "minutes": 201,
-    "km": 35.3
+    "minutes": 214,
+    "km": null
    },
    "shq": {
-    "minutes": 166,
-    "km": 33.8
+    "minutes": 98,
+    "km": null
    },
    "sh": {
-    "minutes": 158,
-    "km": 38.7
+    "minutes": 166,
+    "km": null
    },
    "shn": {
-    "minutes": 190,
-    "km": 44.0
+    "minutes": 198,
+    "km": null
    },
    "pvg": {
-    "minutes": 358,
-    "km": 72.9
+    "minutes": 159,
+    "km": null
    }
   },
   "stn": {
    "gusu": {
-    "minutes": 30,
-    "km": 2.4
+    "minutes": 37,
+    "km": null
    },
    "sip": {
-    "minutes": 63,
-    "km": 9.5
+    "minutes": 62,
+    "km": null
    },
    "snd": {
-    "minutes": 140,
-    "km": 16.6
+    "minutes": 137,
+    "km": null
    },
    "wz": {
     "minutes": 60,
-    "km": 7.6
+    "km": null
    },
    "xc": {
     "minutes": 57,
-    "km": 8.8
+    "km": null
    },
    "wj": {
-    "minutes": 84,
-    "km": 19.5
+    "minutes": 86,
+    "km": null
    },
    "ks": {
-    "minutes": 110,
-    "km": 33.5
+    "minutes": 109,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 168,
-    "km": 43.9
+    "minutes": 151,
+    "km": null
    },
    "tc": {
-    "minutes": 144,
-    "km": 49.8
+    "minutes": 155,
+    "km": null
    },
    "szn": {
     "minutes": 79,
-    "km": 10.0
+    "km": null
    },
    "syq": {
-    "minutes": 72,
-    "km": 14.3
+    "minutes": 70,
+    "km": null
    },
    "sxq": {
-    "minutes": 85,
-    "km": 10.9
+    "minutes": 86,
+    "km": null
    },
    "ksn": {
-    "minutes": 126,
-    "km": 33.5
+    "minutes": 116,
+    "km": null
    },
    "szs": {
-    "minutes": 164,
-    "km": 45.9
+    "minutes": 125,
+    "km": null
    },
    "tcs": {
-    "minutes": 145,
-    "km": 48.7
+    "minutes": 138,
+    "km": null
    },
    "huangpu": {
-    "minutes": 280,
-    "km": 82.1
+    "minutes": 215,
+    "km": null
    },
    "xuhui": {
-    "minutes": 326,
-    "km": 79.7
+    "minutes": 208,
+    "km": null
    },
    "jingan": {
-    "minutes": 283,
-    "km": 79.9
+    "minutes": 209,
+    "km": null
    },
    "putuo": {
-    "minutes": 197,
-    "km": 75.5
+    "minutes": 193,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 228,
-    "km": 84.9
+    "minutes": 227,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 260,
-    "km": 93.6
+    "minutes": 239,
+    "km": null
    },
    "minhang": {
-    "minutes": 113,
-    "km": 77.3
+    "minutes": 318,
+    "km": null
    },
    "jiading": {
-    "minutes": 205,
-    "km": 62.2
+    "minutes": 203,
+    "km": null
    },
    "songjiang": {
-    "minutes": 297,
-    "km": 67.2
+    "minutes": 260,
+    "km": null
    },
    "qingpu": {
-    "minutes": 220,
-    "km": 52.5
+    "minutes": 205,
+    "km": null
    },
    "baoshan": {
-    "minutes": 365,
-    "km": 83.5
+    "minutes": 366,
+    "km": null
    },
    "shq": {
-    "minutes": 228,
-    "km": 68.7
+    "minutes": 226,
+    "km": null
    },
    "sh": {
-    "minutes": 334,
-    "km": 80.5
+    "minutes": 217,
+    "km": null
    },
    "shn": {
-    "minutes": 130,
-    "km": 80.3
+    "minutes": 340,
+    "km": null
    },
    "pvg": {
     "minutes": 215,
-    "km": 115.0
+    "km": null
    }
   },
   "szn": {
    "gusu": {
-    "minutes": 67,
-    "km": 12.3
+    "minutes": 66,
+    "km": null
    },
    "sip": {
-    "minutes": 95,
-    "km": 14.8
+    "minutes": 94,
+    "km": null
    },
    "snd": {
-    "minutes": 187,
-    "km": 21.3
+    "minutes": 192,
+    "km": null
    },
    "wz": {
-    "minutes": 97,
-    "km": 17.5
+    "minutes": 96,
+    "km": null
    },
    "xc": {
-    "minutes": 60,
-    "km": 2.2
+    "minutes": 61,
+    "km": null
    },
    "wj": {
     "minutes": 113,
-    "km": 29.4
+    "km": null
    },
    "ks": {
-    "minutes": 139,
-    "km": 32.7
+    "minutes": 136,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 198,
-    "km": 44.5
+    "minutes": 184,
+    "km": null
    },
    "tc": {
-    "minutes": 194,
-    "km": 47.7
+    "minutes": 223,
+    "km": null
    },
    "stn": {
     "minutes": 69,
-    "km": 10.0
+    "km": null
    },
    "syq": {
-    "minutes": 107,
-    "km": 15.0
+    "minutes": 105,
+    "km": null
    },
    "sxq": {
     "minutes": 116,
-    "km": 13.9
+    "km": null
    },
    "ksn": {
-    "minutes": 155,
-    "km": 33.4
+    "minutes": 150,
+    "km": null
    },
    "szs": {
-    "minutes": 192,
-    "km": 55.8
+    "minutes": 169,
+    "km": null
    },
    "tcs": {
-    "minutes": 196,
-    "km": 46.6
+    "minutes": 184,
+    "km": null
    },
    "huangpu": {
-    "minutes": 246,
-    "km": 83.5
+    "minutes": 244,
+    "km": null
    },
    "xuhui": {
-    "minutes": 238,
-    "km": 81.7
+    "minutes": 236,
+    "km": null
    },
    "jingan": {
-    "minutes": 239,
-    "km": 81.5
+    "minutes": 237,
+    "km": null
    },
    "putuo": {
-    "minutes": 131,
-    "km": 76.9
+    "minutes": 234,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 257,
-    "km": 86.1
+    "minutes": 255,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 270,
-    "km": 95.1
+    "minutes": 268,
+    "km": null
    },
    "minhang": {
     "minutes": 169,
-    "km": 80.6
+    "km": null
    },
    "jiading": {
-    "minutes": 237,
-    "km": 61.7
+    "minutes": 230,
+    "km": null
    },
    "songjiang": {
-    "minutes": 379,
-    "km": 72.2
+    "minutes": 290,
+    "km": null
    },
    "qingpu": {
-    "minutes": 251,
-    "km": 56.6
+    "minutes": 250,
+    "km": null
    },
    "baoshan": {
-    "minutes": 412,
-    "km": 82.7
+    "minutes": 295,
+    "km": null
    },
    "shq": {
-    "minutes": 257,
-    "km": 71.1
+    "minutes": 254,
+    "km": null
    },
    "sh": {
-    "minutes": 249,
-    "km": 81.8
+    "minutes": 248,
+    "km": null
    },
    "shn": {
-    "minutes": 280,
-    "km": 82.8
+    "minutes": 279,
+    "km": null
    },
    "pvg": {
-    "minutes": 266,
-    "km": 116.7
+    "minutes": 313,
+    "km": null
    }
   },
   "syq": {
    "gusu": {
-    "minutes": 61,
-    "km": 14.5
+    "minutes": 59,
+    "km": null
    },
    "sip": {
     "minutes": 44,
-    "km": 7.0
+    "km": null
    },
    "snd": {
-    "minutes": 147,
-    "km": 30.9
+    "minutes": 144,
+    "km": null
    },
    "wz": {
     "minutes": 70,
-    "km": 16.9
+    "km": null
    },
    "xc": {
     "minutes": 81,
-    "km": 12.9
+    "km": null
    },
    "wj": {
-    "minutes": 98,
-    "km": 25.6
+    "minutes": 100,
+    "km": null
    },
    "ks": {
-    "minutes": 56,
-    "km": 19.2
+    "minutes": 55,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 123,
-    "km": 30.1
+    "minutes": 104,
+    "km": null
    },
    "tc": {
-    "minutes": 159,
-    "km": 35.5
+    "minutes": 156,
+    "km": null
    },
    "stn": {
-    "minutes": 68,
-    "km": 14.3
+    "minutes": 72,
+    "km": null
    },
    "szn": {
     "minutes": 107,
-    "km": 15.0
+    "km": null
    },
    "sxq": {
-    "minutes": 112,
-    "km": 24.7
+    "minutes": 114,
+    "km": null
    },
    "ksn": {
-    "minutes": 73,
-    "km": 19.4
+    "minutes": 72,
+    "km": null
    },
    "szs": {
-    "minutes": 177,
-    "km": 50.7
+    "minutes": 154,
+    "km": null
    },
    "tcs": {
-    "minutes": 155,
-    "km": 34.4
+    "minutes": 151,
+    "km": null
    },
    "huangpu": {
-    "minutes": 163,
-    "km": 68.9
+    "minutes": 162,
+    "km": null
    },
    "xuhui": {
-    "minutes": 156,
-    "km": 66.9
+    "minutes": 155,
+    "km": null
    },
    "jingan": {
     "minutes": 157,
-    "km": 66.8
+    "km": null
    },
    "putuo": {
-    "minutes": 147,
-    "km": 62.3
+    "minutes": 146,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 175,
-    "km": 71.6
+    "minutes": 174,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 244,
-    "km": 80.5
+    "minutes": 186,
+    "km": null
    },
    "minhang": {
-    "minutes": 185,
-    "km": 65.6
+    "minutes": 184,
+    "km": null
    },
    "jiading": {
-    "minutes": 152,
-    "km": 48.1
+    "minutes": 149,
+    "km": null
    },
    "songjiang": {
-    "minutes": 245,
-    "km": 57.5
+    "minutes": 206,
+    "km": null
    },
    "qingpu": {
-    "minutes": 163,
-    "km": 41.7
+    "minutes": 167,
+    "km": null
    },
    "baoshan": {
-    "minutes": 223,
-    "km": 69.4
+    "minutes": 221,
+    "km": null
    },
    "shq": {
-    "minutes": 180,
-    "km": 56.2
+    "minutes": 179,
+    "km": null
    },
    "sh": {
-    "minutes": 166,
-    "km": 67.2
+    "minutes": 163,
+    "km": null
    },
    "shn": {
-    "minutes": 198,
-    "km": 67.9
+    "minutes": 195,
+    "km": null
    },
    "pvg": {
-    "minutes": 226,
-    "km": 102.0
+    "minutes": 224,
+    "km": null
    }
   },
   "sxq": {
    "gusu": {
-    "minutes": 74,
-    "km": 12.1
+    "minutes": 73,
+    "km": null
    },
    "sip": {
-    "minutes": 98,
-    "km": 20.4
+    "minutes": 96,
+    "km": null
    },
    "snd": {
-    "minutes": 106,
-    "km": 7.4
+    "minutes": 107,
+    "km": null
    },
    "wz": {
-    "minutes": 82,
-    "km": 15.0
+    "minutes": 83,
+    "km": null
    },
    "xc": {
-    "minutes": 105,
-    "km": 14.5
+    "minutes": 104,
+    "km": null
    },
    "wj": {
-    "minutes": 110,
-    "km": 24.9
+    "minutes": 111,
+    "km": null
    },
    "ks": {
-    "minutes": 144,
-    "km": 43.9
+    "minutes": 143,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 203,
-    "km": 54.6
+    "minutes": 194,
+    "km": null
    },
    "tc": {
-    "minutes": 218,
-    "km": 59.9
+    "minutes": 237,
+    "km": null
    },
    "stn": {
-    "minutes": 84,
-    "km": 10.9
+    "minutes": 85,
+    "km": null
    },
    "szn": {
     "minutes": 116,
-    "km": 13.9
+    "km": null
    },
    "syq": {
-    "minutes": 113,
-    "km": 24.7
+    "minutes": 112,
+    "km": null
    },
    "ksn": {
-    "minutes": 160,
-    "km": 44.1
+    "minutes": 157,
+    "km": null
    },
    "szs": {
-    "minutes": 190,
-    "km": 49.3
+    "minutes": 168,
+    "km": null
    },
    "tcs": {
-    "minutes": 219,
-    "km": 58.8
+    "minutes": 213,
+    "km": null
    },
    "huangpu": {
-    "minutes": 366,
-    "km": 93.0
+    "minutes": 375,
+    "km": null
    },
    "xuhui": {
-    "minutes": 245,
-    "km": 90.6
+    "minutes": 246,
+    "km": null
    },
    "jingan": {
-    "minutes": 369,
-    "km": 90.8
+    "minutes": 255,
+    "km": null
    },
    "putuo": {
     "minutes": 235,
-    "km": 86.4
+    "km": null
    },
    "lujiazui": {
-    "minutes": 355,
-    "km": 95.8
+    "minutes": 400,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 347,
-    "km": 104.5
+    "minutes": 355,
+    "km": null
    },
    "minhang": {
-    "minutes": 170,
-    "km": 88.1
+    "minutes": 269,
+    "km": null
    },
    "jiading": {
-    "minutes": 279,
-    "km": 72.8
+    "minutes": 245,
+    "km": null
    },
    "songjiang": {
-    "minutes": 478,
-    "km": 77.5
+    "minutes": 298,
+    "km": null
    },
    "qingpu": {
-    "minutes": 255,
-    "km": 63.2
+    "minutes": 252,
+    "km": null
    },
    "baoshan": {
-    "minutes": 455,
-    "km": 94.1
+    "minutes": 305,
+    "km": null
    },
    "shq": {
-    "minutes": 337,
-    "km": 79.6
+    "minutes": 314,
+    "km": null
    },
    "sh": {
-    "minutes": 393,
-    "km": 91.4
+    "minutes": 390,
+    "km": null
    },
    "shn": {
-    "minutes": 367,
-    "km": 91.2
+    "minutes": 289,
+    "km": null
    },
    "pvg": {
-    "minutes": 302,
-    "km": 125.9
+    "minutes": 289,
+    "km": null
    }
   },
   "ksn": {
    "gusu": {
-    "minutes": 110,
-    "km": 33.3
+    "minutes": 108,
+    "km": null
    },
    "sip": {
     "minutes": 93,
-    "km": 24.7
+    "km": null
    },
    "snd": {
-    "minutes": 204,
-    "km": 50.1
+    "minutes": 199,
+    "km": null
    },
    "wz": {
-    "minutes": 119,
-    "km": 34.3
+    "minutes": 120,
+    "km": null
    },
    "xc": {
     "minutes": 131,
-    "km": 31.6
+    "km": null
    },
    "wj": {
-    "minutes": 148,
-    "km": 38.8
+    "minutes": 149,
+    "km": null
    },
    "ks": {
-    "minutes": 30,
-    "km": 2.3
+    "minutes": 31,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 91,
-    "km": 11.3
+    "minutes": 86,
+    "km": null
    },
    "tc": {
-    "minutes": 147,
-    "km": 17.3
+    "minutes": 150,
+    "km": null
    },
    "stn": {
     "minutes": 124,
-    "km": 33.5
+    "km": null
    },
    "szn": {
     "minutes": 156,
-    "km": 33.4
+    "km": null
    },
    "syq": {
     "minutes": 73,
-    "km": 19.4
+    "km": null
    },
    "sxq": {
-    "minutes": 163,
-    "km": 44.1
+    "minutes": 162,
+    "km": null
    },
    "szs": {
-    "minutes": 224,
-    "km": 58.8
+    "minutes": 204,
+    "km": null
    },
    "tcs": {
-    "minutes": 143,
-    "km": 16.3
+    "minutes": 145,
+    "km": null
    },
    "huangpu": {
-    "minutes": 151,
-    "km": 50.2
+    "minutes": 146,
+    "km": null
    },
    "xuhui": {
-    "minutes": 144,
-    "km": 48.7
+    "minutes": 139,
+    "km": null
    },
    "jingan": {
-    "minutes": 144,
-    "km": 48.3
+    "minutes": 140,
+    "km": null
    },
    "putuo": {
-    "minutes": 135,
-    "km": 43.7
+    "minutes": 130,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 162,
-    "km": 52.8
+    "minutes": 158,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 175,
-    "km": 61.9
+    "minutes": 170,
+    "km": null
    },
    "minhang": {
-    "minutes": 167,
-    "km": 49.0
+    "minutes": 161,
+    "km": null
    },
    "jiading": {
-    "minutes": 149,
-    "km": 28.7
+    "minutes": 133,
+    "km": null
    },
    "songjiang": {
-    "minutes": 204,
-    "km": 44.8
+    "minutes": 205,
+    "km": null
    },
    "qingpu": {
-    "minutes": 151,
-    "km": 28.3
+    "minutes": 149,
+    "km": null
    },
    "baoshan": {
-    "minutes": 202,
-    "km": 50.0
+    "minutes": 191,
+    "km": null
    },
    "shq": {
-    "minutes": 162,
-    "km": 38.7
+    "minutes": 157,
+    "km": null
    },
    "sh": {
-    "minutes": 165,
-    "km": 48.5
+    "minutes": 147,
+    "km": null
    },
    "shn": {
-    "minutes": 186,
-    "km": 50.4
+    "minutes": 179,
+    "km": null
    },
    "pvg": {
-    "minutes": 202,
-    "km": 83.4
+    "minutes": 201,
+    "km": null
    }
   },
   "szs": {
    "gusu": {
-    "minutes": 152,
-    "km": 43.6
+    "minutes": 132,
+    "km": null
    },
    "sip": {
-    "minutes": 182,
-    "km": 44.6
+    "minutes": 162,
+    "km": null
    },
    "snd": {
-    "minutes": 250,
-    "km": 46.4
+    "minutes": 220,
+    "km": null
    },
    "wz": {
-    "minutes": 153,
-    "km": 38.4
+    "minutes": 133,
+    "km": null
    },
    "xc": {
-    "minutes": 192,
-    "km": 54.4
+    "minutes": 177,
+    "km": null
    },
    "wj": {
-    "minutes": 127,
-    "km": 26.5
+    "minutes": 123,
+    "km": null
    },
    "ks": {
-    "minutes": 222,
-    "km": 60.5
+    "minutes": 200,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 281,
-    "km": 62.1
+    "minutes": 248,
+    "km": null
    },
    "tc": {
-    "minutes": 289,
-    "km": 74.8
+    "minutes": 277,
+    "km": null
    },
    "stn": {
-    "minutes": 164,
-    "km": 45.9
+    "minutes": 144,
+    "km": null
    },
    "szn": {
-    "minutes": 204,
-    "km": 55.8
+    "minutes": 185,
+    "km": null
    },
    "syq": {
-    "minutes": 190,
-    "km": 50.7
+    "minutes": 169,
+    "km": null
    },
    "sxq": {
-    "minutes": 203,
-    "km": 49.3
+    "minutes": 182,
+    "km": null
    },
    "ksn": {
-    "minutes": 233,
-    "km": 58.8
+    "minutes": 223,
+    "km": null
    },
    "tcs": {
-    "minutes": 290,
-    "km": 74.0
+    "minutes": 264,
+    "km": null
    },
    "huangpu": {
-    "minutes": 288,
-    "km": 86.9
+    "minutes": 189,
+    "km": null
    },
    "xuhui": {
-    "minutes": 274,
-    "km": 82.5
+    "minutes": 183,
+    "km": null
    },
    "jingan": {
-    "minutes": 282,
-    "km": 84.2
+    "minutes": 183,
+    "km": null
    },
    "putuo": {
-    "minutes": 313,
-    "km": 81.7
+    "minutes": 204,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 291,
-    "km": 89.8
+    "minutes": 201,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 182,
-    "km": 96.1
+    "minutes": 213,
+    "km": null
    },
    "minhang": {
-    "minutes": 324,
-    "km": 74.7
+    "minutes": 211,
+    "km": null
    },
    "jiading": {
-    "minutes": 343,
-    "km": 78.7
+    "minutes": 258,
+    "km": null
    },
    "songjiang": {
-    "minutes": 297,
-    "km": 57.8
+    "minutes": 206,
+    "km": null
    },
    "qingpu": {
-    "minutes": 228,
-    "km": 53.3
+    "minutes": 139,
+    "km": null
    },
    "baoshan": {
-    "minutes": 211,
-    "km": 97.6
+    "minutes": 250,
+    "km": null
    },
    "shq": {
-    "minutes": 241,
-    "km": 72.0
+    "minutes": 151,
+    "km": null
    },
    "sh": {
-    "minutes": 301,
-    "km": 86.4
+    "minutes": 204,
+    "km": null
    },
    "shn": {
-    "minutes": 322,
-    "km": 80.5
+    "minutes": 221,
+    "km": null
    },
    "pvg": {
-    "minutes": 357,
-    "km": 114.4
+    "minutes": 258,
+    "km": null
    }
   },
   "tcs": {
    "gusu": {
-    "minutes": 134,
-    "km": 48.8
+    "minutes": 141,
+    "km": null
    },
    "sip": {
-    "minutes": 172,
-    "km": 40.4
+    "minutes": 171,
+    "km": null
    },
    "snd": {
-    "minutes": 237,
-    "km": 65.2
+    "minutes": 240,
+    "km": null
    },
    "wz": {
-    "minutes": 159,
-    "km": 50.3
+    "minutes": 166,
+    "km": null
    },
    "xc": {
-    "minutes": 162,
-    "km": 45.1
+    "minutes": 169,
+    "km": null
    },
    "wj": {
-    "minutes": 182,
-    "km": 55.1
+    "minutes": 189,
+    "km": null
    },
    "ks": {
     "minutes": 123,
-    "km": 15.6
+    "km": null
    },
    "huaqiao": {
-    "minutes": 157,
-    "km": 13.3
+    "minutes": 145,
+    "km": null
    },
    "tc": {
-    "minutes": 16,
-    "km": 1.1
+    "minutes": 17,
+    "km": null
    },
    "stn": {
-    "minutes": 130,
-    "km": 48.7
+    "minutes": 138,
+    "km": null
    },
    "szn": {
-    "minutes": 177,
-    "km": 46.6
+    "minutes": 185,
+    "km": null
    },
    "syq": {
     "minutes": 152,
-    "km": 34.4
+    "km": null
    },
    "sxq": {
-    "minutes": 201,
-    "km": 58.8
+    "minutes": 210,
+    "km": null
    },
    "ksn": {
-    "minutes": 135,
-    "km": 16.3
+    "minutes": 133,
+    "km": null
    },
    "szs": {
-    "minutes": 281,
-    "km": 74.0
+    "minutes": 244,
+    "km": null
    },
    "huangpu": {
-    "minutes": 161,
-    "km": 41.7
+    "minutes": 172,
+    "km": null
    },
    "xuhui": {
-    "minutes": 153,
-    "km": 41.8
+    "minutes": 164,
+    "km": null
    },
    "jingan": {
-    "minutes": 154,
-    "km": 40.5
+    "minutes": 165,
+    "km": null
    },
    "putuo": {
-    "minutes": 145,
-    "km": 35.7
+    "minutes": 156,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 172,
-    "km": 43.8
+    "minutes": 183,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 185,
-    "km": 52.9
+    "minutes": 196,
+    "km": null
    },
    "minhang": {
-    "minutes": 177,
-    "km": 45.5
+    "minutes": 187,
+    "km": null
    },
    "jiading": {
-    "minutes": 123,
-    "km": 16.9
+    "minutes": 135,
+    "km": null
    },
    "songjiang": {
-    "minutes": 221,
-    "km": 47.5
+    "minutes": 228,
+    "km": null
    },
    "qingpu": {
-    "minutes": 217,
-    "km": 32.9
+    "minutes": 166,
+    "km": null
    },
    "baoshan": {
-    "minutes": 211,
-    "km": 36.5
+    "minutes": 220,
+    "km": null
    },
    "shq": {
-    "minutes": 172,
-    "km": 34.4
+    "minutes": 120,
+    "km": null
    },
    "sh": {
-    "minutes": 164,
-    "km": 39.6
+    "minutes": 173,
+    "km": null
    },
    "shn": {
-    "minutes": 195,
-    "km": 44.7
+    "minutes": 205,
+    "km": null
    },
    "pvg": {
-    "minutes": 355,
-    "km": 73.9
+    "minutes": 180,
+    "km": null
    }
   },
   "huangpu": {
    "gusu": {
-    "minutes": 311,
-    "km": 81.2
+    "minutes": 113,
+    "km": null
    },
    "sip": {
     "minutes": 183,
-    "km": 72.6
+    "km": null
    },
    "snd": {
-    "minutes": 415,
-    "km": 97.9
+    "minutes": 285,
+    "km": null
    },
    "wz": {
-    "minutes": 295,
-    "km": 80.4
+    "minutes": 209,
+    "km": null
    },
    "xc": {
-    "minutes": 142,
-    "km": 81.6
+    "minutes": 221,
+    "km": null
    },
    "wj": {
-    "minutes": 298,
-    "km": 79.6
+    "minutes": 248,
+    "km": null
    },
    "ks": {
-    "minutes": 133,
-    "km": 51.3
+    "minutes": 134,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 133,
-    "km": 39.0
+    "minutes": 131,
+    "km": null
    },
    "tc": {
-    "minutes": 159,
-    "km": 40.8
+    "minutes": 143,
+    "km": null
    },
    "stn": {
     "minutes": 214,
-    "km": 82.1
+    "km": null
    },
    "szn": {
     "minutes": 246,
-    "km": 83.5
+    "km": null
    },
    "syq": {
     "minutes": 163,
-    "km": 68.9
+    "km": null
    },
    "sxq": {
-    "minutes": 392,
-    "km": 93.0
+    "minutes": 117,
+    "km": null
    },
    "ksn": {
-    "minutes": 162,
-    "km": 50.2
+    "minutes": 144,
+    "km": null
    },
    "szs": {
-    "minutes": 259,
-    "km": 86.9
+    "minutes": 214,
+    "km": null
    },
    "tcs": {
-    "minutes": 161,
-    "km": 41.7
+    "minutes": 145,
+    "km": null
    },
    "xuhui": {
-    "minutes": 37,
-    "km": 5.0
+    "minutes": 38,
+    "km": null
    },
    "jingan": {
-    "minutes": 19,
-    "km": 2.6
+    "minutes": 20,
+    "km": null
    },
    "putuo": {
     "minutes": 48,
-    "km": 6.6
+    "km": null
    },
    "lujiazui": {
-    "minutes": 27,
-    "km": 3.0
+    "minutes": 29,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 40,
-    "km": 11.6
+    "minutes": 41,
+    "km": null
    },
    "minhang": {
     "minutes": 51,
-    "km": 15.6
+    "km": null
    },
    "jiading": {
-    "minutes": 103,
-    "km": 25.0
+    "minutes": 108,
+    "km": null
    },
    "songjiang": {
     "minutes": 93,
-    "km": 32.2
+    "km": null
    },
    "qingpu": {
-    "minutes": 90,
-    "km": 34.1
+    "minutes": 88,
+    "km": null
    },
    "baoshan": {
-    "minutes": 96,
-    "km": 19.0
+    "minutes": 92,
+    "km": null
    },
    "shq": {
     "minutes": 44,
-    "km": 15.0
+    "km": null
    },
    "sh": {
     "minutes": 27,
-    "km": 2.2
+    "km": null
    },
    "shn": {
-    "minutes": 73,
-    "km": 9.4
+    "minutes": 74,
+    "km": null
    },
    "pvg": {
-    "minutes": 84,
-    "km": 33.2
+    "minutes": 86,
+    "km": null
    }
   },
   "xuhui": {
    "gusu": {
-    "minutes": 217,
-    "km": 78.7
+    "minutes": 193,
+    "km": null
    },
    "sip": {
-    "minutes": 248,
-    "km": 70.2
+    "minutes": 176,
+    "km": null
    },
    "snd": {
-    "minutes": 287,
-    "km": 95.3
+    "minutes": 278,
+    "km": null
    },
    "wz": {
-    "minutes": 157,
-    "km": 77.7
+    "minutes": 203,
+    "km": null
    },
    "xc": {
-    "minutes": 215,
-    "km": 79.7
+    "minutes": 214,
+    "km": null
    },
    "wj": {
-    "minutes": 452,
-    "km": 76.2
+    "minutes": 241,
+    "km": null
    },
    "ks": {
     "minutes": 128,
-    "km": 50.0
+    "km": null
    },
    "huaqiao": {
-    "minutes": 127,
-    "km": 37.5
+    "minutes": 125,
+    "km": null
    },
    "tc": {
-    "minutes": 153,
-    "km": 41.0
+    "minutes": 137,
+    "km": null
    },
    "stn": {
     "minutes": 208,
-    "km": 79.7
+    "km": null
    },
    "szn": {
-    "minutes": 240,
-    "km": 81.7
+    "minutes": 239,
+    "km": null
    },
    "syq": {
-    "minutes": 157,
-    "km": 66.9
+    "minutes": 156,
+    "km": null
    },
    "sxq": {
     "minutes": 245,
-    "km": 90.6
+    "km": null
    },
    "ksn": {
-    "minutes": 140,
-    "km": 48.7
+    "minutes": 138,
+    "km": null
    },
    "szs": {
-    "minutes": 255,
-    "km": 82.5
+    "minutes": 209,
+    "km": null
    },
    "tcs": {
-    "minutes": 155,
-    "km": 41.8
+    "minutes": 139,
+    "km": null
    },
    "huangpu": {
     "minutes": 40,
-    "km": 5.0
+    "km": null
    },
    "jingan": {
     "minutes": 34,
-    "km": 3.0
+    "km": null
    },
    "putuo": {
     "minutes": 42,
-    "km": 6.5
+    "km": null
    },
    "lujiazui": {
     "minutes": 52,
-    "km": 7.6
+    "km": null
    },
    "zhangjiang": {
     "minutes": 57,
-    "km": 14.2
+    "km": null
    },
    "minhang": {
     "minutes": 46,
-    "km": 10.7
+    "km": null
    },
    "jiading": {
-    "minutes": 97,
-    "km": 25.6
+    "minutes": 102,
+    "km": null
    },
    "songjiang": {
     "minutes": 65,
-    "km": 27.2
+    "km": null
    },
    "qingpu": {
-    "minutes": 87,
-    "km": 30.3
+    "minutes": 84,
+    "km": null
    },
    "baoshan": {
     "minutes": 99,
-    "km": 23.5
+    "km": null
    },
    "shq": {
     "minutes": 39,
-    "km": 11.3
+    "km": null
    },
    "sh": {
     "minutes": 46,
-    "km": 6.0
+    "km": null
    },
    "shn": {
     "minutes": 64,
-    "km": 4.7
+    "km": null
    },
    "pvg": {
     "minutes": 92,
-    "km": 35.3
+    "km": null
    }
   },
   "jingan": {
    "gusu": {
-    "minutes": 227,
-    "km": 79.0
+    "minutes": 194,
+    "km": null
    },
    "sip": {
     "minutes": 187,
-    "km": 70.4
+    "km": null
    },
    "snd": {
-    "minutes": 298,
-    "km": 95.7
+    "minutes": 280,
+    "km": null
    },
    "wz": {
     "minutes": 204,
-    "km": 78.1
+    "km": null
    },
    "xc": {
-    "minutes": 265,
-    "km": 79.6
+    "minutes": 225,
+    "km": null
    },
    "wj": {
-    "minutes": 300,
-    "km": 77.1
+    "minutes": 242,
+    "km": null
    },
    "ks": {
     "minutes": 128,
-    "km": 49.5
+    "km": null
    },
    "huaqiao": {
-    "minutes": 128,
-    "km": 37.1
+    "minutes": 125,
+    "km": null
    },
    "tc": {
-    "minutes": 153,
-    "km": 39.6
+    "minutes": 137,
+    "km": null
    },
    "stn": {
-    "minutes": 312,
-    "km": 79.9
+    "minutes": 209,
+    "km": null
    },
    "szn": {
     "minutes": 263,
-    "km": 81.5
+    "km": null
    },
    "syq": {
-    "minutes": 157,
-    "km": 66.8
+    "minutes": 158,
+    "km": null
    },
    "sxq": {
-    "minutes": 396,
-    "km": 90.8
+    "minutes": 124,
+    "km": null
    },
    "ksn": {
-    "minutes": 140,
-    "km": 48.3
+    "minutes": 139,
+    "km": null
    },
    "szs": {
-    "minutes": 253,
-    "km": 84.2
+    "minutes": 201,
+    "km": null
    },
    "tcs": {
-    "minutes": 156,
-    "km": 40.5
+    "minutes": 140,
+    "km": null
    },
    "huangpu": {
-    "minutes": 19,
-    "km": 2.6
+    "minutes": 20,
+    "km": null
    },
    "xuhui": {
     "minutes": 32,
-    "km": 3.0
+    "km": null
    },
    "putuo": {
     "minutes": 40,
-    "km": 4.8
+    "km": null
    },
    "lujiazui": {
-    "minutes": 31,
-    "km": 5.6
+    "minutes": 32,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 43,
-    "km": 13.7
+    "minutes": 45,
+    "km": null
    },
    "minhang": {
     "minutes": 49,
-    "km": 13.6
+    "km": null
    },
    "jiading": {
-    "minutes": 98,
-    "km": 23.9
+    "minutes": 103,
+    "km": null
    },
    "songjiang": {
     "minutes": 83,
-    "km": 29.7
+    "km": null
    },
    "qingpu": {
-    "minutes": 85,
-    "km": 31.5
+    "minutes": 82,
+    "km": null
    },
    "baoshan": {
     "minutes": 96,
-    "km": 20.5
+    "km": null
    },
    "shq": {
-    "minutes": 38,
-    "km": 12.4
+    "minutes": 39,
+    "km": null
    },
    "sh": {
-    "minutes": 32,
-    "km": 3.1
+    "minutes": 33,
+    "km": null
    },
    "shn": {
     "minutes": 70,
-    "km": 7.7
+    "km": null
    },
    "pvg": {
-    "minutes": 88,
-    "km": 35.2
+    "minutes": 89,
+    "km": null
    }
   },
   "putuo": {
    "gusu": {
-    "minutes": 186,
-    "km": 74.7
+    "minutes": 183,
+    "km": null
    },
    "sip": {
-    "minutes": 167,
-    "km": 66.0
+    "minutes": 166,
+    "km": null
    },
    "snd": {
-    "minutes": 291,
-    "km": 91.4
+    "minutes": 268,
+    "km": null
    },
    "wz": {
-    "minutes": 194,
-    "km": 74.0
+    "minutes": 193,
+    "km": null
    },
    "xc": {
-    "minutes": 205,
-    "km": 75.0
+    "minutes": 204,
+    "km": null
    },
    "wj": {
-    "minutes": 244,
-    "km": 73.4
+    "minutes": 217,
+    "km": null
    },
    "ks": {
     "minutes": 118,
-    "km": 44.7
+    "km": null
    },
    "huaqiao": {
-    "minutes": 118,
-    "km": 32.4
+    "minutes": 116,
+    "km": null
    },
    "tc": {
-    "minutes": 143,
-    "km": 34.8
+    "minutes": 132,
+    "km": null
    },
    "stn": {
-    "minutes": 195,
-    "km": 75.5
+    "minutes": 192,
+    "km": null
    },
    "szn": {
-    "minutes": 233,
-    "km": 76.9
+    "minutes": 232,
+    "km": null
    },
    "syq": {
     "minutes": 147,
-    "km": 62.3
+    "km": null
    },
    "sxq": {
     "minutes": 235,
-    "km": 86.4
+    "km": null
    },
    "ksn": {
-    "minutes": 130,
-    "km": 43.7
+    "minutes": 128,
+    "km": null
    },
    "szs": {
-    "minutes": 284,
-    "km": 81.7
+    "minutes": 226,
+    "km": null
    },
    "tcs": {
-    "minutes": 146,
-    "km": 35.7
+    "minutes": 135,
+    "km": null
    },
    "huangpu": {
     "minutes": 48,
-    "km": 6.6
+    "km": null
    },
    "xuhui": {
     "minutes": 41,
-    "km": 6.5
+    "km": null
    },
    "jingan": {
-    "minutes": 41,
-    "km": 4.8
+    "minutes": 40,
+    "km": null
    },
    "lujiazui": {
     "minutes": 60,
-    "km": 9.4
+    "km": null
    },
    "zhangjiang": {
     "minutes": 72,
-    "km": 18.2
+    "km": null
    },
    "minhang": {
-    "minutes": 61,
-    "km": 15.0
+    "minutes": 62,
+    "km": null
    },
    "jiading": {
-    "minutes": 88,
-    "km": 19.3
+    "minutes": 91,
+    "km": null
    },
    "songjiang": {
     "minutes": 93,
-    "km": 29.1
+    "km": null
    },
    "qingpu": {
-    "minutes": 102,
-    "km": 28.5
+    "minutes": 100,
+    "km": null
    },
    "baoshan": {
     "minutes": 99,
-    "km": 19.3
+    "km": null
    },
    "shq": {
-    "minutes": 55,
-    "km": 9.9
+    "minutes": 56,
+    "km": null
    },
    "sh": {
-    "minutes": 51,
-    "km": 5.1
+    "minutes": 50,
+    "km": null
    },
    "shn": {
     "minutes": 83,
-    "km": 10.6
+    "km": null
    },
    "pvg": {
     "minutes": 107,
-    "km": 39.8
+    "km": null
    }
   },
   "lujiazui": {
    "gusu": {
-    "minutes": 214,
-    "km": 84.0
+    "minutes": 213,
+    "km": null
    },
    "sip": {
-    "minutes": 298,
-    "km": 75.4
+    "minutes": 299,
+    "km": null
    },
    "snd": {
-    "minutes": 419,
-    "km": 100.8
+    "minutes": 326,
+    "km": null
    },
    "wz": {
-    "minutes": 339,
-    "km": 83.3
+    "minutes": 223,
+    "km": null
    },
    "xc": {
-    "minutes": 158,
-    "km": 84.2
+    "minutes": 235,
+    "km": null
    },
    "wj": {
-    "minutes": 372,
-    "km": 82.5
+    "minutes": 261,
+    "km": null
    },
    "ks": {
     "minutes": 147,
-    "km": 53.8
+    "km": null
    },
    "huaqiao": {
-    "minutes": 147,
-    "km": 41.6
+    "minutes": 144,
+    "km": null
    },
    "tc": {
-    "minutes": 173,
-    "km": 42.8
+    "minutes": 161,
+    "km": null
    },
    "stn": {
-    "minutes": 227,
-    "km": 84.9
+    "minutes": 228,
+    "km": null
    },
    "szn": {
-    "minutes": 400,
-    "km": 86.1
+    "minutes": 393,
+    "km": null
    },
    "syq": {
-    "minutes": 176,
-    "km": 71.6
+    "minutes": 177,
+    "km": null
    },
    "sxq": {
-    "minutes": 383,
-    "km": 95.8
+    "minutes": 133,
+    "km": null
    },
    "ksn": {
-    "minutes": 175,
-    "km": 52.8
+    "minutes": 176,
+    "km": null
    },
    "szs": {
-    "minutes": 265,
-    "km": 89.8
+    "minutes": 224,
+    "km": null
    },
    "tcs": {
-    "minutes": 175,
-    "km": 43.8
+    "minutes": 166,
+    "km": null
    },
    "huangpu": {
-    "minutes": 30,
-    "km": 3.0
+    "minutes": 31,
+    "km": null
    },
    "xuhui": {
-    "minutes": 51,
-    "km": 7.6
+    "minutes": 52,
+    "km": null
    },
    "jingan": {
     "minutes": 33,
-    "km": 5.6
+    "km": null
    },
    "putuo": {
-    "minutes": 61,
-    "km": 9.4
+    "minutes": 66,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 43,
-    "km": 9.2
+    "minutes": 45,
+    "km": null
    },
    "minhang": {
     "minutes": 66,
-    "km": 17.9
+    "km": null
    },
    "jiading": {
-    "minutes": 116,
-    "km": 26.9
+    "minutes": 118,
+    "km": null
    },
    "songjiang": {
-    "minutes": 103,
-    "km": 34.8
+    "minutes": 105,
+    "km": null
    },
    "qingpu": {
-    "minutes": 104,
-    "km": 37.1
+    "minutes": 102,
+    "km": null
    },
    "baoshan": {
-    "minutes": 107,
-    "km": 18.3
+    "minutes": 106,
+    "km": null
    },
    "shq": {
-    "minutes": 57,
-    "km": 18.0
+    "minutes": 58,
+    "km": null
    },
    "sh": {
     "minutes": 43,
-    "km": 4.4
+    "km": null
    },
    "shn": {
-    "minutes": 87,
-    "km": 11.3
+    "minutes": 88,
+    "km": null
    },
    "pvg": {
-    "minutes": 88,
-    "km": 30.6
+    "minutes": 89,
+    "km": null
    }
   },
   "zhangjiang": {
    "gusu": {
-    "minutes": 223,
-    "km": 92.7
+    "minutes": 222,
+    "km": null
    },
    "sip": {
     "minutes": 205,
-    "km": 84.1
+    "km": null
    },
    "snd": {
-    "minutes": 390,
-    "km": 109.3
+    "minutes": 418,
+    "km": null
    },
    "wz": {
-    "minutes": 163,
-    "km": 91.8
+    "minutes": 231,
+    "km": null
    },
    "xc": {
-    "minutes": 167,
-    "km": 93.2
+    "minutes": 243,
+    "km": null
    },
    "wj": {
-    "minutes": 327,
-    "km": 90.4
+    "minutes": 270,
+    "km": null
    },
    "ks": {
     "minutes": 156,
-    "km": 62.9
+    "km": null
    },
    "huaqiao": {
-    "minutes": 156,
-    "km": 50.6
+    "minutes": 152,
+    "km": null
    },
    "tc": {
-    "minutes": 181,
-    "km": 51.9
+    "minutes": 170,
+    "km": null
    },
    "stn": {
     "minutes": 236,
-    "km": 93.6
+    "km": null
    },
    "szn": {
-    "minutes": 269,
-    "km": 95.1
+    "minutes": 268,
+    "km": null
    },
    "syq": {
-    "minutes": 214,
-    "km": 80.5
+    "minutes": 212,
+    "km": null
    },
    "sxq": {
-    "minutes": 351,
-    "km": 104.5
+    "minutes": 369,
+    "km": null
    },
    "ksn": {
     "minutes": 184,
-    "km": 61.9
+    "km": null
    },
    "szs": {
-    "minutes": 281,
-    "km": 96.1
+    "minutes": 232,
+    "km": null
    },
    "tcs": {
-    "minutes": 183,
-    "km": 52.9
+    "minutes": 175,
+    "km": null
    },
    "huangpu": {
     "minutes": 39,
-    "km": 11.6
+    "km": null
    },
    "xuhui": {
     "minutes": 55,
-    "km": 14.2
+    "km": null
    },
    "jingan": {
     "minutes": 42,
-    "km": 13.7
+    "km": null
    },
    "putuo": {
     "minutes": 70,
-    "km": 18.2
+    "km": null
    },
    "lujiazui": {
     "minutes": 41,
-    "km": 9.2
+    "km": null
    },
    "minhang": {
     "minutes": 74,
-    "km": 21.7
+    "km": null
    },
    "jiading": {
-    "minutes": 125,
-    "km": 35.9
+    "minutes": 127,
+    "km": null
    },
    "songjiang": {
     "minutes": 104,
-    "km": 39.3
+    "km": null
    },
    "qingpu": {
-    "minutes": 113,
-    "km": 44.4
+    "minutes": 110,
+    "km": null
    },
    "baoshan": {
-    "minutes": 103,
-    "km": 24.1
+    "minutes": 102,
+    "km": null
    },
    "shq": {
     "minutes": 66,
-    "km": 25.6
+    "km": null
    },
    "sh": {
     "minutes": 52,
-    "km": 13.5
+    "km": null
    },
    "shn": {
-    "minutes": 96,
-    "km": 15.6
+    "minutes": 97,
+    "km": null
    },
    "pvg": {
-    "minutes": 63,
-    "km": 21.5
+    "minutes": 64,
+    "km": null
    }
   },
   "minhang": {
    "gusu": {
-    "minutes": 332,
-    "km": 76.1
+    "minutes": 331,
+    "km": null
    },
    "sip": {
-    "minutes": 269,
-    "km": 67.9
+    "minutes": 270,
+    "km": null
    },
    "snd": {
-    "minutes": 310,
-    "km": 92.1
+    "minutes": 301,
+    "km": null
    },
    "wz": {
     "minutes": 226,
-    "km": 74.3
+    "km": null
    },
    "xc": {
-    "minutes": 278,
-    "km": 78.5
+    "minutes": 276,
+    "km": null
    },
    "wj": {
-    "minutes": 181,
-    "km": 71.3
+    "minutes": 322,
+    "km": null
    },
    "ks": {
     "minutes": 151,
-    "km": 50.6
+    "km": null
    },
    "huaqiao": {
-    "minutes": 150,
-    "km": 38.2
+    "minutes": 147,
+    "km": null
    },
    "tc": {
-    "minutes": 178,
-    "km": 44.9
+    "minutes": 166,
+    "km": null
    },
    "stn": {
-    "minutes": 130,
-    "km": 77.3
+    "minutes": 343,
+    "km": null
    },
    "szn": {
-    "minutes": 389,
-    "km": 80.6
+    "minutes": 390,
+    "km": null
    },
    "syq": {
     "minutes": 187,
-    "km": 65.6
+    "km": null
    },
    "sxq": {
     "minutes": 268,
-    "km": 88.1
+    "km": null
    },
    "ksn": {
-    "minutes": 179,
-    "km": 49.0
+    "minutes": 161,
+    "km": null
    },
    "szs": {
-    "minutes": 283,
-    "km": 74.7
+    "minutes": 234,
+    "km": null
    },
    "tcs": {
-    "minutes": 180,
-    "km": 45.5
+    "minutes": 171,
+    "km": null
    },
    "huangpu": {
     "minutes": 51,
-    "km": 15.6
+    "km": null
    },
    "xuhui": {
     "minutes": 45,
-    "km": 10.7
+    "km": null
    },
    "jingan": {
     "minutes": 48,
-    "km": 13.6
+    "km": null
    },
    "putuo": {
-    "minutes": 62,
-    "km": 15.0
+    "minutes": 63,
+    "km": null
    },
    "lujiazui": {
     "minutes": 61,
-    "km": 17.9
+    "km": null
    },
    "zhangjiang": {
     "minutes": 74,
-    "km": 21.7
+    "km": null
    },
    "jiading": {
-    "minutes": 123,
-    "km": 31.4
+    "minutes": 124,
+    "km": null
    },
    "songjiang": {
     "minutes": 89,
-    "km": 17.5
+    "km": null
    },
    "qingpu": {
-    "minutes": 115,
-    "km": 25.3
+    "minutes": 112,
+    "km": null
    },
    "baoshan": {
-    "minutes": 116,
-    "km": 33.9
+    "minutes": 115,
+    "km": null
    },
    "shq": {
     "minutes": 67,
-    "km": 11.1
+    "km": null
    },
    "sh": {
     "minutes": 48,
-    "km": 16.6
+    "km": null
    },
    "shn": {
-    "minutes": 67,
-    "km": 6.6
+    "minutes": 65,
+    "km": null
    },
    "pvg": {
     "minutes": 119,
-    "km": 40.1
+    "km": null
    }
   },
   "jiading": {
    "gusu": {
-    "minutes": 191,
-    "km": 61.8
+    "minutes": 190,
+    "km": null
    },
    "sip": {
     "minutes": 173,
-    "km": 53.1
+    "km": null
    },
    "snd": {
-    "minutes": 310,
-    "km": 78.7
+    "minutes": 284,
+    "km": null
    },
    "wz": {
-    "minutes": 199,
-    "km": 62.3
+    "minutes": 200,
+    "km": null
    },
    "xc": {
     "minutes": 211,
-    "km": 60.0
+    "km": null
    },
    "wj": {
-    "minutes": 250,
-    "km": 64.5
+    "minutes": 223,
+    "km": null
    },
    "ks": {
-    "minutes": 124,
-    "km": 29.1
+    "minutes": 125,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 125,
-    "km": 18.8
+    "minutes": 122,
+    "km": null
    },
    "tc": {
-    "minutes": 118,
-    "km": 16.0
+    "minutes": 128,
+    "km": null
    },
    "stn": {
-    "minutes": 204,
-    "km": 62.2
+    "minutes": 196,
+    "km": null
    },
    "szn": {
-    "minutes": 237,
-    "km": 61.7
+    "minutes": 236,
+    "km": null
    },
    "syq": {
     "minutes": 153,
-    "km": 48.1
+    "km": null
    },
    "sxq": {
     "minutes": 286,
-    "km": 72.8
+    "km": null
    },
    "ksn": {
-    "minutes": 136,
-    "km": 28.7
+    "minutes": 135,
+    "km": null
    },
    "szs": {
-    "minutes": 316,
-    "km": 78.7
+    "minutes": 293,
+    "km": null
    },
    "tcs": {
-    "minutes": 121,
-    "km": 16.9
+    "minutes": 131,
+    "km": null
    },
    "huangpu": {
-    "minutes": 107,
-    "km": 25.0
+    "minutes": 104,
+    "km": null
    },
    "xuhui": {
-    "minutes": 100,
-    "km": 25.6
+    "minutes": 101,
+    "km": null
    },
    "jingan": {
-    "minutes": 99,
-    "km": 23.9
+    "minutes": 98,
+    "km": null
    },
    "putuo": {
-    "minutes": 91,
-    "km": 19.3
+    "minutes": 88,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 119,
-    "km": 26.9
+    "minutes": 116,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 131,
-    "km": 35.9
+    "minutes": 128,
+    "km": null
    },
    "minhang": {
-    "minutes": 123,
-    "km": 31.4
+    "minutes": 119,
+    "km": null
    },
    "songjiang": {
-    "minutes": 152,
-    "km": 38.4
+    "minutes": 149,
+    "km": null
    },
    "qingpu": {
-    "minutes": 136,
-    "km": 28.4
+    "minutes": 139,
+    "km": null
    },
    "baoshan": {
-    "minutes": 124,
-    "km": 21.4
+    "minutes": 153,
+    "km": null
    },
    "shq": {
-    "minutes": 116,
-    "km": 20.7
+    "minutes": 115,
+    "km": null
    },
    "sh": {
-    "minutes": 108,
-    "km": 22.8
+    "minutes": 105,
+    "km": null
    },
    "shn": {
-    "minutes": 140,
-    "km": 29.2
+    "minutes": 137,
+    "km": null
    },
    "pvg": {
-    "minutes": 174,
-    "km": 57.0
+    "minutes": 173,
+    "km": null
    }
   },
   "songjiang": {
    "gusu": {
-    "minutes": 327,
-    "km": 65.5
+    "minutes": 329,
+    "km": null
    },
    "sip": {
-    "minutes": 311,
-    "km": 58.2
+    "minutes": 231,
+    "km": null
    },
    "snd": {
-    "minutes": 340,
-    "km": 80.5
+    "minutes": 332,
+    "km": null
    },
    "wz": {
-    "minutes": 408,
-    "km": 62.9
+    "minutes": 257,
+    "km": null
    },
    "xc": {
-    "minutes": 369,
-    "km": 70.1
+    "minutes": 268,
+    "km": null
    },
    "wj": {
-    "minutes": 271,
-    "km": 57.8
+    "minutes": 281,
+    "km": null
    },
    "ks": {
-    "minutes": 208,
-    "km": 46.8
+    "minutes": 206,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 181,
-    "km": 36.2
+    "minutes": 177,
+    "km": null
    },
    "tc": {
-    "minutes": 203,
-    "km": 47.3
+    "minutes": 200,
+    "km": null
    },
    "stn": {
     "minutes": 325,
-    "km": 67.2
+    "km": null
    },
    "szn": {
     "minutes": 294,
-    "km": 72.2
+    "km": null
    },
    "syq": {
-    "minutes": 214,
-    "km": 57.5
+    "minutes": 210,
+    "km": null
    },
    "sxq": {
     "minutes": 299,
-    "km": 77.5
+    "km": null
    },
    "ksn": {
-    "minutes": 206,
-    "km": 44.8
+    "minutes": 211,
+    "km": null
    },
    "szs": {
-    "minutes": 263,
-    "km": 57.8
+    "minutes": 231,
+    "km": null
    },
    "tcs": {
     "minutes": 205,
-    "km": 47.5
+    "km": null
    },
    "huangpu": {
-    "minutes": 94,
-    "km": 32.2
+    "minutes": 93,
+    "km": null
    },
    "xuhui": {
     "minutes": 66,
-    "km": 27.2
+    "km": null
    },
    "jingan": {
-    "minutes": 84,
-    "km": 29.7
+    "minutes": 83,
+    "km": null
    },
    "putuo": {
-    "minutes": 94,
-    "km": 29.1
+    "minutes": 95,
+    "km": null
    },
    "lujiazui": {
     "minutes": 104,
-    "km": 34.8
+    "km": null
    },
    "zhangjiang": {
     "minutes": 106,
-    "km": 39.3
+    "km": null
    },
    "minhang": {
-    "minutes": 90,
-    "km": 17.5
+    "minutes": 89,
+    "km": null
    },
    "jiading": {
     "minutes": 149,
-    "km": 38.4
+    "km": null
    },
    "qingpu": {
-    "minutes": 81,
-    "km": 16.5
+    "minutes": 90,
+    "km": null
    },
    "baoshan": {
-    "minutes": 149,
-    "km": 48.3
+    "minutes": 148,
+    "km": null
    },
    "shq": {
     "minutes": 69,
-    "km": 20.1
+    "km": null
    },
    "sh": {
     "minutes": 90,
-    "km": 32.5
+    "km": null
    },
    "shn": {
     "minutes": 107,
-    "km": 23.9
+    "km": null
    },
    "pvg": {
     "minutes": 100,
-    "km": 56.5
+    "km": null
    }
   },
   "qingpu": {
    "gusu": {
-    "minutes": 195,
-    "km": 51.1
+    "minutes": 200,
+    "km": null
    },
    "sip": {
-    "minutes": 177,
-    "km": 43.2
+    "minutes": 183,
+    "km": null
    },
    "snd": {
-    "minutes": 301,
-    "km": 66.9
+    "minutes": 311,
+    "km": null
    },
    "wz": {
-    "minutes": 204,
-    "km": 49.2
+    "minutes": 210,
+    "km": null
    },
    "xc": {
-    "minutes": 215,
-    "km": 54.5
+    "minutes": 221,
+    "km": null
    },
    "wj": {
-    "minutes": 220,
-    "km": 46.3
+    "minutes": 205,
+    "km": null
    },
    "ks": {
-    "minutes": 128,
-    "km": 30.4
+    "minutes": 134,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 126,
-    "km": 20.4
+    "minutes": 129,
+    "km": null
    },
    "tc": {
-    "minutes": 200,
-    "km": 32.9
+    "minutes": 193,
+    "km": null
    },
    "stn": {
-    "minutes": 208,
-    "km": 52.5
+    "minutes": 207,
+    "km": null
    },
    "szn": {
-    "minutes": 245,
-    "km": 56.6
+    "minutes": 249,
+    "km": null
    },
    "syq": {
-    "minutes": 157,
-    "km": 41.7
+    "minutes": 163,
+    "km": null
    },
    "sxq": {
-    "minutes": 248,
-    "km": 63.2
+    "minutes": 254,
+    "km": null
    },
    "ksn": {
-    "minutes": 140,
-    "km": 28.3
+    "minutes": 145,
+    "km": null
    },
    "szs": {
-    "minutes": 207,
-    "km": 53.3
+    "minutes": 147,
+    "km": null
    },
    "tcs": {
-    "minutes": 196,
-    "km": 32.9
+    "minutes": 189,
+    "km": null
    },
    "huangpu": {
     "minutes": 90,
-    "km": 34.1
+    "km": null
    },
    "xuhui": {
-    "minutes": 85,
-    "km": 30.3
+    "minutes": 84,
+    "km": null
    },
    "jingan": {
     "minutes": 84,
-    "km": 31.5
+    "km": null
    },
    "putuo": {
     "minutes": 103,
-    "km": 28.5
+    "km": null
    },
    "lujiazui": {
     "minutes": 102,
-    "km": 37.1
+    "km": null
    },
    "zhangjiang": {
     "minutes": 114,
-    "km": 44.4
+    "km": null
    },
    "minhang": {
-    "minutes": 108,
-    "km": 25.3
+    "minutes": 105,
+    "km": null
    },
    "jiading": {
-    "minutes": 158,
-    "km": 28.4
+    "minutes": 159,
+    "km": null
    },
    "songjiang": {
-    "minutes": 85,
-    "km": 16.5
+    "minutes": 90,
+    "km": null
    },
    "baoshan": {
-    "minutes": 156,
-    "km": 44.7
+    "minutes": 154,
+    "km": null
    },
    "shq": {
     "minutes": 52,
-    "km": 19.1
+    "km": null
    },
    "sh": {
-    "minutes": 103,
-    "km": 33.4
+    "minutes": 102,
+    "km": null
    },
    "shn": {
-    "minutes": 124,
-    "km": 29.4
+    "minutes": 122,
+    "km": null
    },
    "pvg": {
     "minutes": 119,
-    "km": 64.8
+    "km": null
    }
   },
   "baoshan": {
    "gusu": {
-    "minutes": 155,
-    "km": 83.2
+    "minutes": 390,
+    "km": null
    },
    "sip": {
-    "minutes": 360,
-    "km": 74.5
+    "minutes": 351,
+    "km": null
    },
    "snd": {
-    "minutes": 344,
-    "km": 100.0
+    "minutes": 335,
+    "km": null
    },
    "wz": {
-    "minutes": 261,
-    "km": 83.6
+    "minutes": 260,
+    "km": null
    },
    "xc": {
-    "minutes": 185,
-    "km": 81.0
+    "minutes": 456,
+    "km": null
    },
    "wj": {
-    "minutes": 310,
-    "km": 85.4
+    "minutes": 287,
+    "km": null
    },
    "ks": {
-    "minutes": 185,
-    "km": 50.3
+    "minutes": 184,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 185,
-    "km": 40.2
+    "minutes": 180,
+    "km": null
    },
    "tc": {
-    "minutes": 207,
-    "km": 35.3
+    "minutes": 202,
+    "km": null
    },
    "stn": {
-    "minutes": 399,
-    "km": 83.5
+    "minutes": 389,
+    "km": null
    },
    "szn": {
-    "minutes": 298,
-    "km": 82.7
+    "minutes": 296,
+    "km": null
    },
    "syq": {
-    "minutes": 235,
-    "km": 69.4
+    "minutes": 213,
+    "km": null
    },
    "sxq": {
-    "minutes": 303,
-    "km": 94.1
+    "minutes": 301,
+    "km": null
    },
    "ksn": {
-    "minutes": 197,
-    "km": 50.0
+    "minutes": 194,
+    "km": null
    },
    "szs": {
-    "minutes": 321,
-    "km": 97.6
+    "minutes": 279,
+    "km": null
    },
    "tcs": {
-    "minutes": 209,
-    "km": 36.5
+    "minutes": 207,
+    "km": null
    },
    "huangpu": {
-    "minutes": 91,
-    "km": 19.0
+    "minutes": 88,
+    "km": null
    },
    "xuhui": {
-    "minutes": 98,
-    "km": 23.5
+    "minutes": 96,
+    "km": null
    },
    "jingan": {
-    "minutes": 96,
-    "km": 20.5
+    "minutes": 95,
+    "km": null
    },
    "putuo": {
-    "minutes": 99,
-    "km": 19.3
+    "minutes": 98,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 103,
-    "km": 18.3
+    "minutes": 100,
+    "km": null
    },
    "zhangjiang": {
-    "minutes": 105,
-    "km": 24.1
+    "minutes": 101,
+    "km": null
    },
    "minhang": {
-    "minutes": 116,
-    "km": 33.9
+    "minutes": 113,
+    "km": null
    },
    "jiading": {
-    "minutes": 127,
-    "km": 21.4
+    "minutes": 136,
+    "km": null
    },
    "songjiang": {
-    "minutes": 146,
-    "km": 48.3
+    "minutes": 144,
+    "km": null
    },
    "qingpu": {
-    "minutes": 156,
-    "km": 44.7
+    "minutes": 152,
+    "km": null
    },
    "shq": {
-    "minutes": 109,
-    "km": 28.4
+    "minutes": 108,
+    "km": null
    },
    "sh": {
-    "minutes": 76,
-    "km": 17.5
+    "minutes": 75,
+    "km": null
    },
    "shn": {
-    "minutes": 124,
-    "km": 28.2
+    "minutes": 123,
+    "km": null
    },
    "pvg": {
-    "minutes": 150,
-    "km": 41.2
+    "minutes": 146,
+    "km": null
    }
   },
   "shq": {
    "gusu": {
-    "minutes": 246,
-    "km": 67.7
+    "minutes": 209,
+    "km": null
    },
    "sip": {
-    "minutes": 266,
-    "km": 59.2
+    "minutes": 247,
+    "km": null
    },
    "snd": {
-    "minutes": 397,
-    "km": 84.1
+    "minutes": 296,
+    "km": null
    },
    "wz": {
-    "minutes": 226,
-    "km": 66.5
+    "minutes": 231,
+    "km": null
    },
    "xc": {
-    "minutes": 309,
-    "km": 69.1
+    "minutes": 329,
+    "km": null
    },
    "wj": {
-    "minutes": 232,
-    "km": 64.9
+    "minutes": 216,
+    "km": null
    },
    "ks": {
     "minutes": 143,
-    "km": 40.2
+    "km": null
    },
    "huaqiao": {
-    "minutes": 145,
-    "km": 27.6
+    "minutes": 141,
+    "km": null
    },
    "tc": {
-    "minutes": 168,
-    "km": 33.8
+    "minutes": 134,
+    "km": null
    },
    "stn": {
-    "minutes": 277,
-    "km": 68.7
+    "minutes": 334,
+    "km": null
    },
    "szn": {
-    "minutes": 256,
-    "km": 71.1
+    "minutes": 255,
+    "km": null
    },
    "syq": {
     "minutes": 181,
-    "km": 56.2
+    "km": null
    },
    "sxq": {
-    "minutes": 359,
-    "km": 79.6
+    "minutes": 378,
+    "km": null
    },
    "ksn": {
-    "minutes": 157,
-    "km": 38.7
+    "minutes": 155,
+    "km": null
    },
    "szs": {
-    "minutes": 217,
-    "km": 72.0
+    "minutes": 164,
+    "km": null
    },
    "tcs": {
-    "minutes": 170,
-    "km": 34.4
+    "minutes": 136,
+    "km": null
    },
    "huangpu": {
     "minutes": 41,
-    "km": 15.0
+    "km": null
    },
    "xuhui": {
     "minutes": 35,
-    "km": 11.3
+    "km": null
    },
    "jingan": {
     "minutes": 35,
-    "km": 12.4
+    "km": null
    },
    "putuo": {
     "minutes": 54,
-    "km": 9.9
+    "km": null
    },
    "lujiazui": {
     "minutes": 53,
-    "km": 18.0
+    "km": null
    },
    "zhangjiang": {
     "minutes": 65,
-    "km": 25.6
+    "km": null
    },
    "minhang": {
     "minutes": 64,
-    "km": 11.1
+    "km": null
    },
    "jiading": {
-    "minutes": 111,
-    "km": 20.7
+    "minutes": 113,
+    "km": null
    },
    "songjiang": {
     "minutes": 70,
-    "km": 20.1
+    "km": null
    },
    "qingpu": {
     "minutes": 50,
-    "km": 19.1
+    "km": null
    },
    "baoshan": {
-    "minutes": 107,
-    "km": 28.4
+    "minutes": 105,
+    "km": null
    },
    "sh": {
     "minutes": 54,
-    "km": 14.4
+    "km": null
    },
    "shn": {
     "minutes": 74,
-    "km": 11.7
+    "km": null
    },
    "pvg": {
     "minutes": 72,
-    "km": 46.5
+    "km": null
    }
   },
   "sh": {
    "gusu": {
-    "minutes": 324,
-    "km": 79.7
+    "minutes": 203,
+    "km": null
    },
    "sip": {
-    "minutes": 187,
-    "km": 71.1
+    "minutes": 186,
+    "km": null
    },
    "snd": {
-    "minutes": 478,
-    "km": 96.5
+    "minutes": 289,
+    "km": null
    },
    "wz": {
-    "minutes": 349,
-    "km": 79.1
+    "minutes": 213,
+    "km": null
    },
    "xc": {
     "minutes": 225,
-    "km": 79.9
+    "km": null
    },
    "wj": {
-    "minutes": 252,
-    "km": 78.4
+    "minutes": 251,
+    "km": null
    },
    "ks": {
-    "minutes": 138,
-    "km": 49.5
+    "minutes": 137,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 137,
-    "km": 37.2
+    "minutes": 134,
+    "km": null
    },
    "tc": {
-    "minutes": 162,
-    "km": 38.7
+    "minutes": 145,
+    "km": null
    },
    "stn": {
     "minutes": 218,
-    "km": 80.5
+    "km": null
    },
    "szn": {
-    "minutes": 262,
-    "km": 81.8
+    "minutes": 250,
+    "km": null
    },
    "syq": {
     "minutes": 167,
-    "km": 67.2
+    "km": null
    },
    "sxq": {
-    "minutes": 406,
-    "km": 91.4
+    "minutes": 256,
+    "km": null
    },
    "ksn": {
     "minutes": 166,
-    "km": 48.5
+    "km": null
    },
    "szs": {
-    "minutes": 271,
-    "km": 86.4
+    "minutes": 221,
+    "km": null
    },
    "tcs": {
-    "minutes": 165,
-    "km": 39.6
+    "minutes": 148,
+    "km": null
    },
    "huangpu": {
     "minutes": 25,
-    "km": 2.2
+    "km": null
    },
    "xuhui": {
     "minutes": 44,
-    "km": 6.0
+    "km": null
    },
    "jingan": {
-    "minutes": 30,
-    "km": 3.1
+    "minutes": 31,
+    "km": null
    },
    "putuo": {
     "minutes": 51,
-    "km": 5.1
+    "km": null
    },
    "lujiazui": {
     "minutes": 40,
-    "km": 4.4
+    "km": null
    },
    "zhangjiang": {
     "minutes": 53,
-    "km": 13.5
+    "km": null
    },
    "minhang": {
     "minutes": 47,
-    "km": 16.6
+    "km": null
    },
    "jiading": {
-    "minutes": 112,
-    "km": 22.8
+    "minutes": 108,
+    "km": null
    },
    "songjiang": {
     "minutes": 89,
-    "km": 32.5
+    "km": null
    },
    "qingpu": {
-    "minutes": 102,
-    "km": 33.4
+    "minutes": 99,
+    "km": null
    },
    "baoshan": {
     "minutes": 76,
-    "km": 17.5
+    "km": null
    },
    "shq": {
     "minutes": 55,
-    "km": 14.4
+    "km": null
    },
    "shn": {
     "minutes": 71,
-    "km": 10.7
+    "km": null
    },
    "pvg": {
     "minutes": 98,
-    "km": 35.0
+    "km": null
    }
   },
   "shn": {
    "gusu": {
-    "minutes": 236,
-    "km": 79.2
+    "minutes": 366,
+    "km": null
    },
    "sip": {
-    "minutes": 218,
-    "km": 70.8
+    "minutes": 216,
+    "km": null
    },
    "snd": {
-    "minutes": 336,
-    "km": 95.6
+    "minutes": 319,
+    "km": null
    },
    "wz": {
-    "minutes": 244,
-    "km": 77.9
+    "minutes": 243,
+    "km": null
    },
    "xc": {
-    "minutes": 256,
-    "km": 80.8
+    "minutes": 255,
+    "km": null
    },
    "wj": {
-    "minutes": 283,
-    "km": 75.6
+    "minutes": 281,
+    "km": null
    },
    "ks": {
-    "minutes": 169,
-    "km": 51.8
+    "minutes": 167,
+    "km": null
    },
    "huaqiao": {
-    "minutes": 168,
-    "km": 39.2
+    "minutes": 163,
+    "km": null
    },
    "tc": {
-    "minutes": 188,
-    "km": 44.0
+    "minutes": 178,
+    "km": null
    },
    "stn": {
-    "minutes": 249,
-    "km": 80.3
+    "minutes": 247,
+    "km": null
    },
    "szn": {
-    "minutes": 281,
-    "km": 82.8
+    "minutes": 279,
+    "km": null
    },
    "syq": {
-    "minutes": 198,
-    "km": 67.9
+    "minutes": 196,
+    "km": null
    },
    "sxq": {
-    "minutes": 288,
-    "km": 91.2
+    "minutes": 287,
+    "km": null
    },
    "ksn": {
-    "minutes": 180,
-    "km": 50.4
+    "minutes": 177,
+    "km": null
    },
    "szs": {
-    "minutes": 292,
-    "km": 80.5
+    "minutes": 241,
+    "km": null
    },
    "tcs": {
-    "minutes": 190,
-    "km": 44.7
+    "minutes": 183,
+    "km": null
    },
    "huangpu": {
     "minutes": 73,
-    "km": 9.4
+    "km": null
    },
    "xuhui": {
-    "minutes": 64,
-    "km": 4.7
+    "minutes": 62,
+    "km": null
    },
    "jingan": {
-    "minutes": 69,
-    "km": 7.7
+    "minutes": 70,
+    "km": null
    },
    "putuo": {
-    "minutes": 80,
-    "km": 10.6
+    "minutes": 79,
+    "km": null
    },
    "lujiazui": {
-    "minutes": 84,
-    "km": 11.3
+    "minutes": 85,
+    "km": null
    },
    "zhangjiang": {
     "minutes": 97,
-    "km": 15.6
+    "km": null
    },
    "minhang": {
     "minutes": 66,
-    "km": 6.6
+    "km": null
    },
    "jiading": {
-    "minutes": 132,
-    "km": 29.2
+    "minutes": 133,
+    "km": null
    },
    "songjiang": {
-    "minutes": 105,
-    "km": 23.9
+    "minutes": 104,
+    "km": null
    },
    "qingpu": {
-    "minutes": 123,
-    "km": 29.4
+    "minutes": 119,
+    "km": null
    },
    "baoshan": {
-    "minutes": 123,
-    "km": 28.2
+    "minutes": 122,
+    "km": null
    },
    "shq": {
-    "minutes": 76,
-    "km": 11.7
+    "minutes": 74,
+    "km": null
    },
    "sh": {
-    "minutes": 76,
-    "km": 10.7
+    "minutes": 74,
+    "km": null
    },
    "pvg": {
-    "minutes": 142,
-    "km": 35.4
+    "minutes": 130,
+    "km": null
    }
   },
   "pvg": {
    "gusu": {
-    "minutes": 225,
-    "km": 114.1
+    "minutes": 247,
+    "km": null
    },
    "sip": {
-    "minutes": 247,
-    "km": 105.5
+    "minutes": 248,
+    "km": null
    },
    "snd": {
-    "minutes": 328,
-    "km": 130.6
+    "minutes": 337,
+    "km": null
    },
    "wz": {
-    "minutes": 250,
-    "km": 113.0
+    "minutes": 272,
+    "km": null
    },
    "xc": {
-    "minutes": 255,
-    "km": 114.7
+    "minutes": 275,
+    "km": null
    },
    "wj": {
-    "minutes": 282,
-    "km": 111.0
+    "minutes": 289,
+    "km": null
    },
    "ks": {
     "minutes": 176,
-    "km": 84.4
+    "km": null
    },
    "huaqiao": {
-    "minutes": 197,
-    "km": 72.2
+    "minutes": 201,
+    "km": null
    },
    "tc": {
-    "minutes": 162,
-    "km": 72.9
+    "minutes": 241,
+    "km": null
    },
    "stn": {
-    "minutes": 223,
-    "km": 115.0
+    "minutes": 243,
+    "km": null
    },
    "szn": {
-    "minutes": 268,
-    "km": 116.7
+    "minutes": 288,
+    "km": null
    },
    "syq": {
-    "minutes": 165,
-    "km": 102.0
+    "minutes": 182,
+    "km": null
    },
    "sxq": {
-    "minutes": 304,
-    "km": 125.9
+    "minutes": 324,
+    "km": null
    },
    "ksn": {
-    "minutes": 185,
-    "km": 83.4
+    "minutes": 179,
+    "km": null
    },
    "szs": {
-    "minutes": 324,
-    "km": 114.4
+    "minutes": 274,
+    "km": null
    },
    "tcs": {
-    "minutes": 219,
-    "km": 73.9
+    "minutes": 244,
+    "km": null
    },
    "huangpu": {
     "minutes": 81,
-    "km": 33.2
+    "km": null
    },
    "xuhui": {
-    "minutes": 97,
-    "km": 35.3
+    "minutes": 90,
+    "km": null
    },
    "jingan": {
     "minutes": 83,
-    "km": 35.2
+    "km": null
    },
    "putuo": {
     "minutes": 112,
-    "km": 39.8
+    "km": null
    },
    "lujiazui": {
     "minutes": 82,
-    "km": 30.6
+    "km": null
    },
    "zhangjiang": {
     "minutes": 61,
-    "km": 21.5
+    "km": null
    },
    "minhang": {
-    "minutes": 116,
-    "km": 40.1
+    "minutes": 115,
+    "km": null
    },
    "jiading": {
-    "minutes": 164,
-    "km": 57.0
+    "minutes": 166,
+    "km": null
    },
    "songjiang": {
     "minutes": 97,
-    "km": 56.5
+    "km": null
    },
    "qingpu": {
-    "minutes": 118,
-    "km": 64.8
+    "minutes": 115,
+    "km": null
    },
    "baoshan": {
-    "minutes": 129,
-    "km": 41.2
+    "minutes": 141,
+    "km": null
    },
    "shq": {
     "minutes": 69,
-    "km": 46.5
+    "km": null
    },
    "sh": {
-    "minutes": 94,
-    "km": 35.0
+    "minutes": 92,
+    "km": null
    },
    "shn": {
     "minutes": 138,
-    "km": 35.4
+    "km": null
    }
   }
  }

@@ -32,6 +32,19 @@ export function nameOf(x) {
   return x.name || "自选点";
 }
 
+// 常用点（自由点预设）：坐标取自高德地理编码（2026-09-21）
+export const FAVORITES = [
+  { key: "home",      name: "我家·观澜逸品花苑南区", coord: [120.70008, 31.23369] },
+  { key: "zhongshan", name: "中山公园",             coord: [121.42743, 31.21679] },
+  { key: "mao",       name: "MAO Livehouse",        coord: [121.47208, 31.20994] },
+];
+export const favValue = (f) => `fav:${f.key}`;
+export const favOfValue = (v) =>
+  v && v.startsWith("fav:") ? FAVORITES.find(f => favValue(f) === v) : null;
+export const isFavoriteCoord = (coord) =>
+  FAVORITES.some(f => Math.abs(f.coord[0] - coord[0]) < 1e-4
+                  && Math.abs(f.coord[1] - coord[1]) < 1e-4);
+
 const cache = new Map();
 async function cached(key, url) {
   if (!cache.has(key)) {

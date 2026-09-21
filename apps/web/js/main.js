@@ -3,6 +3,7 @@ import {
   state, HUBS, HUB_COORD, HUB_BY_ID, initHubs, specOf, nameOf,
   getTimes, getIso, getRoute, MODES, MODE_NAME, MODE_HEX,
   BAND_COLORS, statusInfo, smoothLine,
+  FAVORITES, favValue, favOfValue, isFavoriteCoord,
 } from "./core.js";
 import { renderMetro } from "./metro.js";
 
@@ -26,12 +27,6 @@ function fillSelect(sel) {
   const el = $(sel);
   const cur = sel === "selOrigin" ? state.origin : state.dest;
   el.innerHTML = "";
-  if (cur.type === "point") {
-    const o = document.createElement("option");
-    o.value = "__point";
-    o.textContent = `◎ ${nameOf(cur)}`;
-    el.appendChild(o);
-  }
   for (const city of ["苏州", "上海"]) {
     const og = document.createElement("optgroup");
     og.label = city;
@@ -43,7 +38,32 @@ function fillSelect(sel) {
     }
     el.appendChild(og);
   }
-  el.value = cur.type === "hub" ? cur.id : "__point";
+  const ogFav = document.createElement("optgroup");
+  ogFav.label = "常用点";
+  for (const f of FAVORITES) {
+    const o = document.createElement("option");
+    o.value = favValue(f);
+    o.textContent = `⌂ ${f.name}`;
+    ogFav.appendChild(o);
+  }
+  el.appendChild(ogFav);
+  if (cur.type === "point" && !isFavoriteCoord(cur.coord)) {
+    const o = document.createElement("option");
+    o.value = "__point";
+    o.textContent = `◎ ${nameOf(cur)}`;
+    el.appendChild(o);
+  }
+  el.value = cur.type === "hub" ? cur.id
+    : cur.type === "point" && isFavoriteCoord(cur.coord)
+      ? favValue(FAVORITES.find(f => Math.abs(f.coord[0] - cur.coord[0]) < 1e-4
+                               && Math.abs(f.coord[1] - cur.coord[1]) < 1e-4))
+      : "__point";
+}
+
+function selToPoint(v) {
+  const f = favOfValue(v);
+  return f ? { type: "point", coord: f.coord, name: f.name }
+           : { type: "hub", id: v };
 }
 
 function syncPickUI() {
@@ -388,8 +408,8 @@ async function init() {
   renderChips();
   initMap();
 
-  $("selOrigin").onchange = (e) => setOrigin({ type: "hub", id: e.target.value });
-  $("selDest").onchange = (e) => setDest({ type: "hub", id: e.target.value });
+  $("selOrigin").onchange = (e) => setOrigin(selToPoint(e.target.value));
+  $("selDest").onchange = (e) => setDest(selToPoint(e.target.value));
   $("btnSwap").onclick = () => {
     [state.origin, state.dest] = [state.dest, state.origin];
     fillSelect("selOrigin");

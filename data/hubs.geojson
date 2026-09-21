@@ -244,13 +244,13 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
-     120.635,
-     30.918
+     120.7995,
+     31.0629
     ]
    },
    "properties": {
     "id": "szs",
-    "name": "苏州南站（吴江·盛泽）",
+    "name": "苏州南站",
     "city": "苏州",
     "kind": "rail",
     "hsr": true

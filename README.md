@@ -31,16 +31,17 @@ python -m uvicorn apps.api.main:app --port 8000
 - **排行表**：从当前起点出发的前 12 枢纽分钟排行，点击行直接设为终点。
 - **自由点**：地图任意点选起/终点；自由点按「就近枢纽接驳」模型计价
   （接驳段 = 直线距离 × 绕行系数 ÷ 分段车速，两端接驳 + 枢纽间矩阵段）。
-- **候车缓冲**：右上角可选（默认 20′），作用于高铁与公交的换乘等待。
+  下拉框另附「常用点」：我家·观澜逸品花苑南区、中山公园、MAO Livehouse。
+- **候车缓冲**：右上角可选 5′/10′/15′/20′/30′（默认 20′），作用于高铁与公交的换乘等待。
 
 ## 数据与模型（source 标注）
 
 | 数据 | 文件 | 当前来源 |
 |---|---|---|
 | 枢纽 | `data/hubs.geojson`、`data/hubs.csv` | 31 个枢纽（苏州 16 + 上海 15），人工整理 |
-| 驾车·高速 / 国道 | `data/matrix/driving.json`、`driving_local.json` | `estimate`（分段车速模型 + 经验锚点手工校准） |
-| 公共交通 | `data/matrix/transit.json` | `estimate`（步行+轨道+接驳模型） |
-| 高铁 | `data/hsr.json` | `synthetic`（按线路密度合成时刻表，**非真实车次**） |
+| 驾车·高速 / 国道 | `data/matrix/driving.json`、`driving_local.json` | `amap`（高德路径规划实测，2026-09-21 全量校准） |
+| 公共交通 | `data/matrix/transit.json` | `amap`（高德公交路径规划实测） |
+| 高铁 | `data/hsr.json` | `real`（12306 实测时刻表 CSV 转换，1014 车次） |
 
 自由点接驳估算模型见 `scripts/estimate_model.py`；各矩阵的来源标注写入文件 `meta.source`，
 前端徽章据此显示「演示估算数据」或「已接入高德实测数据」。
@@ -48,10 +49,11 @@ python -m uvicorn apps.api.main:app --port 8000
 ## 脚本
 
 ```bash
-python scripts/build_hubs.py           # 重建枢纽 geojson/csv
-python scripts/build_matrix_estimate.py # 重建估算矩阵（driving/driving_local/transit）
-python scripts/build_hsr.py            # 重建合成高铁时刻表（双向）
-python scripts/build_matrix_amap.py    # 【需 AMAP_KEY】用高德重算矩阵并覆盖 estimate
+python scripts/build_hubs.py              # 重建枢纽 geojson/csv
+python scripts/build_matrix_estimate.py   # 重建估算矩阵（driving/driving_local/transit）
+python scripts/build_hsr.py               # 重建合成高铁时刻表（演示/兜底）
+python scripts/build_matrix_amap.py       # 【需 AMAP_KEY】用高德重算矩阵（断点续跑）
+python scripts/build_hsr_from_csv.py      # 【需时刻表CSV】把 data/hsr_timetable.csv 转为真实 hsr.json
 ```
 
 ## 接入高德实测数据（可选校准）

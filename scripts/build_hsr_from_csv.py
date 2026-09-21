@@ -108,12 +108,16 @@ def main():
                 coords[r["id"]] = [float(r["lng"]), float(r["lat"])]
 
     today = date.today().isoformat()
+    skipped_uniq = sorted({s.split("|")[0] for s in skipped_station}
+                          | {s.split("|")[1] for s in skipped_station})
     data = {
         "meta": {
+            "mode": "hsr",
             "source": "real",
             "updated_at": today,
-            "note": "车次时刻为12306余票查询接口实测数据（G/D/C，运行图以查询日为准）；"
+            "note": "车次时刻为用户提供/12306 实测时刻表（G/D/C，运行图以查询日为准）；"
                     "门到门候车缓冲默认20分钟。",
+            "stations_skipped": skipped_uniq,
         },
         "stations": HSR_IDS,
         "coords": coords,
