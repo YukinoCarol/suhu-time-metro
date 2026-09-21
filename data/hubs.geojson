@@ -278,6 +278,23 @@
    "geometry": {
     "type": "Point",
     "coordinates": [
+     120.7804,
+     31.6976
+    ]
+   },
+   "properties": {
+    "id": "csr",
+    "name": "常熟站（沪苏通）",
+    "city": "苏州",
+    "kind": "rail",
+    "hsr": true
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
      121.4695,
      31.2335
     ]

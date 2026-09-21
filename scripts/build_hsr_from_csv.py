@@ -21,7 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 
 NAME_HUB = {
     "苏州": "stn", "苏州北": "szn", "苏州园区": "syq", "苏州新区": "sxq",
-    "昆山南": "ksn", "苏州南": "szs", "太仓": "tcs",
+    "昆山南": "ksn", "苏州南": "szs", "太仓": "tcs", "常熟": "csr",
     "上海虹桥": "shq", "上海": "sh", "上海南": "shn",
 }
 TIME_RE = re.compile(r"^([01]?\d|2[0-3]):([0-5]\d)$")

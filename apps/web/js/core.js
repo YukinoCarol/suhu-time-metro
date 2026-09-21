@@ -32,11 +32,13 @@ export function nameOf(x) {
   return x.name || "自选点";
 }
 
-// 常用点（自由点预设）：坐标取自高德地理编码（2026-09-21）
+// 常用点（自由点预设）：坐标取自高德地理编码/POI（2026-09-21）
 export const FAVORITES = [
   { key: "home",      name: "我家·观澜逸品花苑南区", coord: [120.70008, 31.23369] },
   { key: "zhongshan", name: "中山公园",             coord: [121.42743, 31.21679] },
   { key: "mao",       name: "MAO Livehouse",        coord: [121.47208, 31.20994] },
+  { key: "hengtai",   name: "常熟·衡泰花园",        coord: [120.76362, 31.67440] },
+  { key: "huayuan",   name: "常熟·花园新区五区",    coord: [120.82863, 31.57084] },
 ];
 export const favValue = (f) => `fav:${f.key}`;
 export const favOfValue = (v) =>

@@ -338,4 +338,13 @@ def api_data_hsr():
     return FileResponse(DATA / "hsr.json", media_type="application/json")
 
 
+@app.middleware("http")
+async def static_revalidate(request, call_next):
+    # 静态资源要求协商缓存（ETag 重验证），避免前端更新后浏览器仍用启发式缓存的旧模块
+    resp = await call_next(request)
+    if request.url.path == "/" or request.url.path.startswith("/js/"):
+        resp.headers["Cache-Control"] = "no-cache"
+    return resp
+
+
 app.mount("/", StaticFiles(directory=WEB, html=True), name="web")
