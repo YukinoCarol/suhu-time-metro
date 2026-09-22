@@ -69,6 +69,10 @@ export const getIso = (fromSpec, mode, buffer) =>
 export const getRoute = (fromSpec, toSpec, buffer) =>
   cached(`R|${fromSpec}|${toSpec}|${buffer}`,
     `/api/route?from=${encodeURIComponent(fromSpec)}&to=${encodeURIComponent(toSpec)}&buffer=${buffer}`);
+// 真实路线几何 + 经过路段/换乘明细（后端按需调高德并缓存，无Key回落直线）
+export const getRouteGeo = (fromSpec, toSpec, mode, buffer) =>
+  cached(`G|${fromSpec}|${toSpec}|${mode}|${buffer}`,
+    `/api/route_geo?from=${encodeURIComponent(fromSpec)}&to=${encodeURIComponent(toSpec)}&mode=${mode}&buffer=${buffer}`);
 
 export function invalidateFrom(fromSpec) {
   for (const k of [...cache.keys()]) if (k.split("|")[1] === fromSpec) cache.delete(k);

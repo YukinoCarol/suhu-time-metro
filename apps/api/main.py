@@ -6,6 +6,7 @@
 - GET /api/hubs                    枢纽 GeoJSON
 - GET /api/times?from=&buffer=     起点→全部枢纽 四方式分钟数
 - GET /api/route?from=&to=&buffer= 起终点四方式分钟数 + 画线 legs
+- GET /api/route_geo?from=&to=&mode= 真实路线几何+经过路段/换乘明细（按需调高德，磁盘缓存）
 - GET /api/isochrone?from=&mode=   等时面 GeoJSON（IDW 插值格网）
 - GET /api/data/...                数据原文件；/ 挂载前端静态页
 
@@ -13,12 +14,14 @@ origin/destination 规格: "hub:<id>" 或 "<lng>,<lat>"。
 query_now: 出发时刻（当日分钟数），用于高铁门到门选最近一班车。
 """
 
+import hashlib
 import json
 import os
 import sys
 from datetime import datetime
 from pathlib import Path
 
+import httpx
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
@@ -98,11 +101,18 @@ def nearest_hub(lng, lat):
     return best
 
 
-def access_minutes(hub, station):
-    """枢纽↔高铁站 接驳分钟：取驾车/公交中较优。"""
-    if hub == station:
-        return 0
-    a, b = HUB_COORD[hub], HUB_COORD[station]
+def access_minutes(p_from, p_to, coord_from=None, coord_to=None):
+    """接驳分钟（起点侧/终点侧通用）：
+    - 两端都是枢纽：直接查高德实测矩阵（公交取驾车与公交较优，与矩阵口径一致）；
+    - 含自由点：沿用估算模型兜底（不产生 API 调用）。
+    coord_* 为自由点坐标；枢纽坐标自动查表。
+    """
+    a = coord_from if coord_from is not None else HUB_COORD[p_from]
+    b = coord_to if coord_to is not None else HUB_COORD[p_to]
+    if p_from and p_to:
+        m = MATRICES["driving"]["matrix"][p_from][p_to]["minutes"]
+        t = MATRICES["transit"]["matrix"][p_from][p_to]["minutes"]
+        return min(m, t + 2)
     km = haversine_km(a[0], a[1], b[0], b[1])
     return min(drive_minutes(km), transit_minutes(km) + 2)
 
@@ -134,8 +144,10 @@ def hsr_entry(p_from, p_to, buffer=20, query_now=None):
         return {"minutes": 0, "legs": [], "detail": None}
     # 两枢纽同城：不绕高铁站，直达地面交通取较优
     if (ha and hb and HUB_BY_ID[ha]["city"] == HUB_BY_ID[hb]["city"]):
-        km = haversine_km(ca[0], ca[1], cb[0], cb[1])
-        m = min(drive_minutes(km), transit_minutes(km) + 2)
+        if ha == hb:
+            return {"minutes": 0, "legs": [], "detail": None}
+        # 双枢纽同城走实测矩阵；含自由点走估算兜底
+        m = access_minutes(ha, hb, ca, cb)
         return {"minutes": m, "legs": [[ca, cb]],
                 "detail": {"intra_city": True, "total": m,
                            "note": "同城直达（开车/公交取较优，不绕高铁）"}}
@@ -154,14 +166,12 @@ def hsr_entry(p_from, p_to, buffer=20, query_now=None):
 
     best = None
     for so in cand_stations(ha, ca):
-        acc_o = 0 if ha == so else drive_minutes(
-            haversine_km(ca[0], ca[1], *HUB_COORD[so]))
+        acc_o = 0 if ha == so else access_minutes(ha, so, ca, None)
         for sd in cand_stations(hb, cb):
             trains = TRAINS_BY_PAIR.get((so, sd), [])
             if not trains:
                 continue
-            acc_d = 0 if hb == sd else drive_minutes(
-                haversine_km(*HUB_COORD[sd], cb[0], cb[1]))
+            acc_d = 0 if hb == sd else access_minutes(hb, sd, cb, None)
             ride = min(t["minutes"] for t in trains)
             total = acc_o + buffer + ride + acc_d
             cand = {"total": total, "station_from": so, "station_to": sd,
@@ -317,6 +327,174 @@ def api_isochrone(from_: str = Query(..., alias="from"),
                        "hub_minutes": hub_min}}
     _ISO_CACHE[key] = result
     return result
+
+
+# ---------- 真实路线几何（方案A：按需实调高德 + 磁盘缓存，无Key/失败回落直线） ----------
+
+GEO_CACHE = DATA / "route_geo"
+GEO_CACHE.mkdir(exist_ok=True)
+AMAP_BASE = "https://restapi.amap.com/v3"
+
+
+def _geo_cache_path(mode, from_spec, to_spec):
+    h = hashlib.md5(f"{mode}|{from_spec}|{to_spec}".encode()).hexdigest()[:16]
+    return GEO_CACHE / f"{mode}_{h}.json"
+
+
+def _coord_spec(spec):
+    """hub:id → "lng,lat"（高德接口只认坐标）。"""
+    k, h, c = parse_point(spec)
+    return f"{c[0]:.6f},{c[1]:.6f}"
+
+
+def _amap_get(path, params):
+    """带重试的高德 GET；Key 未配置或调用失败返回 None。"""
+    if not AMAP_KEY:
+        return None
+    try:
+        d = httpx.get(f"{AMAP_BASE}{path}",
+                      params={**params, "key": AMAP_KEY}, timeout=15).json()
+        if d.get("status") == "1":
+            return d
+    except Exception:
+        pass
+    return None
+
+
+def _straight_geo(from_spec, to_spec, mode):
+    """回落：直线示意（与旧行为一致）。"""
+    _, ha, ca = parse_point(from_spec)
+    _, hb, cb = parse_point(to_spec)
+    return {"type": "Feature", "geometry": {"type": "LineString",
+                                            "coordinates": [ca, cb]},
+            "properties": {"mode": mode, "kind": "straight"}}
+
+
+def _drive_geo(from_spec, to_spec, mode):
+    """驾车（strategy 0=高速 / 3=不走高速）：真实道路折线 + 主要经过道路。"""
+    d = _amap_get("/direction/driving", {
+        "origin": _coord_spec(from_spec), "destination": _coord_spec(to_spec),
+        "strategy": 0 if mode == "driving" else 3,
+        "extensions": "base",
+    })
+    if d is None:
+        return None
+    p = d["route"]["paths"][0]
+    pts = []
+    for st in p["steps"]:
+        pts += [[float(v) for v in xy.split(",")]
+                for xy in st["polyline"].split(";")]
+    roads, seen = [], set()
+    for st in p["steps"]:
+        name = st.get("road") or st.get("name") or ""
+        if name and name not in seen:
+            seen.add(name)
+            roads.append(name)
+    return {"type": "Feature", "geometry": {"type": "LineString",
+                                            "coordinates": pts},
+            "properties": {"mode": mode, "kind": "amap",
+                           "km": round(int(p["distance"]) / 1000, 1),
+                           "roads": roads[:12]}}
+
+
+def _transit_geo(from_spec, to_spec):
+    """公交：真实换乘链（线路号/步行段）+ 各段折线。城市取起终点所在城市
+    （枢纽查表，自由点取最近枢纽所在城市）。"""
+    _, ha, ca = parse_point(from_spec)
+    _, hb, cb = parse_point(to_spec)
+    city_o = HUB_BY_ID[ha]["city"] if ha else nearest_hub(*ca)["city"]
+    city_d = HUB_BY_ID[hb]["city"] if hb else nearest_hub(*cb)["city"]
+    d = _amap_get("/direction/transit/integrated", {
+        "origin": _coord_spec(from_spec), "destination": _coord_spec(to_spec),
+        "city": city_o, "cityd": city_d,
+        "strategy": 0,
+    })
+    if d is None:
+        return None
+    ts = d["route"]["transits"]
+    if not ts:
+        return None
+    t = ts[0]
+    segs, lines_all, walk_m = [], [], 0
+    for seg in t.get("segments", []):
+        if seg.get("walking") and seg["walking"].get("distance"):
+            walk_m += int(seg["walking"]["distance"])
+            wr = []
+            for st in seg["walking"].get("steps", []):
+                wr += [[float(v) for v in xy.split(",")]
+                       for xy in st["polyline"].split(";")]
+            if wr:
+                segs.append({"kind": "walk", "m": int(seg["walking"]["distance"]),
+                             "coords": wr})
+        for bus in seg.get("bus", {}).get("buslines", []):
+            name = bus.get("name", "")
+            lines_all.append(name)
+            br = [[float(v) for v in xy.split(",")]
+                  for xy in bus.get("polyline", "").split(";") if xy]
+            segs.append({"kind": "bus", "name": name,
+                         "m": int(bus.get("distance", 0)), "coords": br})
+    coords = [c for s in segs for c in s["coords"]]
+    if len(coords) < 2:
+        return None
+    return {"type": "Feature", "geometry": {"type": "LineString",
+                                            "coordinates": coords},
+            "properties": {"mode": "transit", "kind": "amap",
+                           "km": round(int(d["route"]["distance"]) / 1000, 1),
+                           "walk_m": walk_m, "lines": lines_all, "segs": segs}}
+
+
+def _hsr_geo(from_spec, to_spec, buffer):
+    """高铁：站到站示意线 + 接驳直线；明细复用 hsr_entry（含真实车次）。"""
+    now = datetime.now()
+    r = hsr_entry(from_spec, to_spec, buffer, now.hour * 60 + now.minute)
+    _, ha, ca = parse_point(from_spec)
+    _, hb, cb = parse_point(to_spec)
+    segs = []
+    for a, b in r["legs"]:
+        segs.append({"kind": "hsr" if (a in [HUB_COORD[s] for s in HSR_STATIONS]
+                                       and b in [HUB_COORD[s] for s in HSR_STATIONS])
+                     else "access", "coords": [a, b]})
+    props = {"mode": "hsr", "kind": "schematic"}
+    d = r.get("detail")
+    if d and not d.get("intra_city") and d.get("train"):
+        nm = lambda i: (HUB_BY_ID[i] or {}).get("name", i)
+        tr = d["train"]
+        props.update({"train_no": tr["no"], "train_dep": tr["dep"],
+                      "train_arr": tr["arr"],
+                      "station_from": nm(d["station_from"]),
+                      "station_to": nm(d["station_to"])})
+    return {"type": "Feature", "geometry": {"type": "LineString",
+                                            "coordinates": [c for s in segs for c in s["coords"]]},
+            "properties": {**props, "segs": segs}}
+
+
+@app.get("/api/route_geo")
+def api_route_geo(from_: str = Query(..., alias="from"),
+                  to: str = Query(...), mode: str = "driving",
+                  buffer: int = 20):
+    if mode not in MODES:
+        raise HTTPException(400, f"bad mode: {mode}")
+    ka, ha, ca = parse_point(from_)
+    kb, hb, cb = parse_point(to)
+    if ha and hb and ha == hb:
+        return {"route": None, "note": "same_point"}
+    cp = _geo_cache_path(mode, from_, to)
+    if cp.exists():  # 磁盘缓存：同 OD 同模式不重复调 API
+        return _load(cp)
+    geo = None
+    if mode in ("driving", "driving_local"):
+        geo = _drive_geo(_coord_spec(from_), _coord_spec(to), mode)
+    elif mode == "transit":
+        geo = _transit_geo(_coord_spec(from_), _coord_spec(to))
+    else:
+        geo = _hsr_geo(from_, to, buffer)
+    if geo is None:  # 无 Key / 调用失败 / 无方案 → 直线回落
+        geo = _straight_geo(from_, to, mode)
+    out = {"route": geo,
+           "generated_at": datetime.now().isoformat(timespec="seconds")}
+    if geo["properties"].get("kind") == "amap":
+        cp.write_text(json.dumps(out, ensure_ascii=False), encoding="utf-8")
+    return out
 
 
 @app.get("/api/data/hubs.geojson")

@@ -1,7 +1,7 @@
 // 主入口：左 MapLibre 热力地图 + 右 D3 时间地铁
 import {
   state, HUBS, HUB_COORD, HUB_BY_ID, initHubs, specOf, nameOf,
-  getTimes, getIso, getRoute, MODES, MODE_NAME, MODE_HEX,
+  getTimes, getIso, getRoute, getRouteGeo, MODES, MODE_NAME, MODE_HEX,
   BAND_COLORS, statusInfo, smoothLine,
   FAVORITES, favValue, favOfValue, isFavoriteCoord,
 } from "./core.js";
@@ -179,11 +179,25 @@ function onMapLoad() {
   map.addSource("route", { type: "geojson", data: emptyFC() });
   map.addLayer({
     id: "route-line", type: "line", source: "route",
-    paint: { "line-color": MODE_HEX[state.mode], "line-width": 6, "line-opacity": 0.9 },
+    paint: {
+      "line-color": MODE_HEX[state.mode], "line-width": 6,
+      "line-opacity": [
+        "case",
+        ["in", ["get", "kind"], ["literal", ["walk", "access", "hsr"]]], 0,
+        0.9,
+      ],
+    },
   });
   map.addLayer({
     id: "route-dash", type: "line", source: "route",
-    paint: { "line-color": "#ffffff", "line-width": 2, "line-opacity": 0.9 },
+    paint: {
+      "line-color": MODE_HEX[state.mode], "line-width": 2.5,
+      "line-opacity": [
+        "case",
+        ["in", ["get", "kind"], ["literal", ["walk", "access", "hsr"]]], 0.9,
+        0,
+      ],
+    },
   });
   map.setPaintProperty("route-dash", "line-dasharray", [0.1, 2]);
 
@@ -216,14 +230,30 @@ function onMapClick(e) {
 
 /* ---------- 线路与标注 ---------- */
 
-function updateRouteLine() {
+function updateRouteLine(geoRoute) {
   const src = map.getSource("route");
   if (!src) return;
-  const legs = routeData?.modes?.[state.mode]?.legs || [];
-  const pts = smoothLine(legs.flat());
-  src.setData(pts.length >= 2
-    ? { type: "Feature", geometry: { type: "LineString", coordinates: pts } }
-    : emptyFC());
+  const props = geoRoute?.route?.properties || {};
+  // 真实路线（amap 公交/高铁分段）按段画线：公交区分步行虚线，高铁区分接驳段
+  const segs = props.segs;
+  if (segs?.length) {
+    src.setData({
+      type: "FeatureCollection",
+      features: segs.map(s => ({
+        type: "Feature",
+        geometry: { type: "LineString", coordinates: s.coords },
+        properties: { kind: s.kind },
+      })),
+    });
+  } else if (geoRoute?.route?.geometry) {
+    src.setData(geoRoute.route);
+  } else {
+    const legs = routeData?.modes?.[state.mode]?.legs || [];
+    const pts = smoothLine(legs.flat());
+    src.setData(pts.length >= 2
+      ? { type: "Feature", geometry: { type: "LineString", coordinates: pts } }
+      : emptyFC());
+  }
   map.setPaintProperty("route-line", "line-color", MODE_HEX[state.mode]);
   map.setPaintProperty("hub-outer", "circle-stroke-color", MODE_HEX[state.mode]);
 }
@@ -280,7 +310,7 @@ function syncHubLabelVis() {
 
 /* ---------- 右栏 ---------- */
 
-function renderCompare() {
+function renderCompare(geoRoute) {
   const box = $("compare");
   const modes = routeData?.modes || {};
   const rows = MODES
@@ -295,6 +325,24 @@ function renderCompare() {
       <span class="name">${MODE_NAME[r.m]}</span>
       <span class="min" style="color:${MODE_HEX[r.m]}">${r.v}′</span>
     </div>`;
+  }
+  // —— 路线明细卡：经过道路 / 换乘链 / 车次（来自 /api/route_geo）——
+  const props = geoRoute?.route?.properties || {};
+  if (props.kind === "amap" && (props.mode === "driving" || props.mode === "driving_local")) {
+    html += `<div class="brk">
+      <div><span class="k">里程（高德实测路线）</span><span class="v">${props.km} km</span></div>
+      ${props.roads?.length ? `<div><span class="k">主要经过</span><span class="v">${props.roads.join(" · ")}</span></div>` : ""}
+    </div>`;
+  } else if (props.kind === "amap" && props.mode === "transit") {
+    html += `<div class="brk">
+      <div><span class="k">里程</span><span class="v">${props.km} km</span></div>
+      <div><span class="k">步行合计</span><span class="v">${props.walk_m} m</span></div>`;
+    for (const s of props.segs || []) {
+      html += s.kind === "walk"
+        ? `<div><span class="k">🚶 步行</span><span class="v">${s.m} m</span></div>`
+        : `<div><span class="k">🚇 ${s.name}</span><span class="v">${s.m >= 1000 ? (s.m / 1000).toFixed(1) + " km" : s.m + " m"}</span></div>`;
+    }
+    html += `</div>`;
   }
   const hsr = modes.hsr;
   if (state.dest !== state.origin && hsr?.detail) {
@@ -369,9 +417,14 @@ async function refresh() {
     map.getSource("iso")?.setData(iso);
     routeData = await getRoute(fromSpec, toSpec, state.buffer);
     if (seq !== refreshSeq) return;
-    updateRouteLine();
+    let geoRoute = null;
+    try {
+      geoRoute = await getRouteGeo(fromSpec, toSpec, state.mode, state.buffer);
+      if (seq !== refreshSeq) return;
+    } catch (_) { /* 几何失败不阻塞主视图 */ }
+    updateRouteLine(geoRoute);
     updateMarkers();
-    renderCompare();
+    renderCompare(geoRoute);
     renderRank();
     updateTitles();
   } catch (err) {
