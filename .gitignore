@@ -8,3 +8,7 @@ __pycache__/
 # 环境与密钥
 .env
 .workbuddy/
+
+# 运行时缓存（按需拉取的高德路线几何 / 等时圈结果，可再生）
+data/route_geo/
+data/iso_cache/

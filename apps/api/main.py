@@ -35,6 +35,12 @@ from estimate_model import (  # noqa: E402
     haversine_km,
     transit_minutes,
 )
+from isochrone import (  # noqa: E402
+    THRESHOLDS,
+    build_isochrone,
+    calibration_factor,
+    est_lookup,
+)
 
 DATA = ROOT / "data"
 WEB = ROOT / "apps" / "web"
@@ -178,8 +184,15 @@ def hsr_entry(p_from, p_to, buffer=20, query_now=None):
                     "ride": ride, "access_from": acc_o, "access_to": acc_d,
                     "buffer": buffer}
             if query_now is not None:
+                # 有出发时刻：按所乘班次的实际候车与车程重算，
+                # 保证 total 与展示车次自洽（原实现 total 用最快班次、
+                # 展示下一班，二者不一致）
                 tr, nd = _pick_train(trains, query_now + acc_o + buffer)
-                cand["train"] = tr
+                wait = (_hm(tr["dep"]) + (1440 if nd else 0)
+                        - query_now - acc_o)
+                total = acc_o + wait + tr["minutes"] + acc_d
+                cand.update({"total": total, "ride": tr["minutes"],
+                             "wait": wait, "train": tr})
                 if nd:
                     cand["next_day"] = True
             if best is None or total < best["total"]:
@@ -272,61 +285,57 @@ def api_route(from_: str = Query(..., alias="from"), to: str = Query(...),
 
 
 _ISO_CACHE: dict = {}
+ISO_CACHE_DIR = DATA / "iso_cache"
+
+# 等时圈野外段校准系数：用实测矩阵反推估算模型的系统偏差（模块加载时算一次）
+ISO_LUT = {  # 各模式的外推用估算函数 + 查表
+    "driving": est_lookup(drive_minutes),
+    "driving_local": est_lookup(drive_local_minutes),
+    "transit": est_lookup(transit_minutes),
+    "hsr": est_lookup(drive_minutes),   # 高铁野外段按驾车位移估计
+}
+ISO_CALIB = {
+    m: calibration_factor(MATRICES[m]["matrix"], EST_FN[m], [h["id"] for h in HUBS],
+                          HUB_COORD)
+    for m in ("driving", "driving_local", "transit")
+}
+ISO_CALIB["hsr"] = ISO_CALIB["driving"]
+
+
+def _iso_cache_path(mode, from_spec, buffer):
+    h = hashlib.md5(f"{mode}|{from_spec}|{buffer}".encode()).hexdigest()[:16]
+    return ISO_CACHE_DIR / f"{mode}_{h}.json"
 
 
 @app.get("/api/isochrone")
 def api_isochrone(from_: str = Query(..., alias="from"),
                   mode: str = "driving", buffer: int = 20):
+    """等时圈 v2：细格网加性场 + Marching Squares 矢量化，8 档至 180′。"""
     if mode not in MODES:
         raise HTTPException(400, f"bad mode: {mode}")
     key = (mode, from_, buffer)
-    cached = _ISO_CACHE.get(key)
-    if cached is not None:
-        return cached
-    hub_min = {h["id"]: time_entry(mode, from_, f"hub:{h['id']}", buffer)["minutes"]
-               for h in HUBS}
-    valid = [(k, v) for k, v in hub_min.items() if v is not None]
-    # 范围足够大，让 90′ 等时线在图幅内自然闭合（90′ 驾车半径约 100km）
-    bbox = (119.35, 30.25, 122.25, 32.25)
-    step_lon, step_lat = 0.02, 0.017
-    n_lon = int((bbox[2] - bbox[0]) / step_lon)
-    n_lat = int((bbox[3] - bbox[1]) / step_lat)
-    feats = []
-    for i in range(n_lon):
-        for j in range(n_lat):
-            lng = bbox[0] + (i + 0.5) * step_lon
-            lat = bbox[1] + (j + 0.5) * step_lat
-            num = den = 0.0
-            for hid, mv in valid:
-                c = HUB_COORD[hid]
-                d = haversine_km(lng, lat, c[0], c[1]) + 0.5
-                w = 1.0 / (d * d)
-                num += w * mv
-                den += w
-            t = num / den
-            band = 5
-            for k, th in enumerate((15, 30, 45, 60, 90)):
-                if t <= th:
-                    band = k
-                    break
-            half_lon, half_lat = step_lon / 2, step_lat / 2
-            feats.append({
-                "type": "Feature",
-                "geometry": {"type": "Polygon", "coordinates": [[
-                    [lng - half_lon, lat - half_lat],
-                    [lng + half_lon, lat - half_lat],
-                    [lng + half_lon, lat + half_lat],
-                    [lng - half_lon, lat + half_lat],
-                    [lng - half_lon, lat - half_lat],
-                ]]},
-                "properties": {"band": band, "minutes": round(t)},
-            })
-    result = {"type": "FeatureCollection", "features": feats,
-              "meta": {"mode": mode, "from": from_,
-                       "source": "estimate-interpolated",
-                       "hub_minutes": hub_min}}
-    _ISO_CACHE[key] = result
-    return result
+    if key in _ISO_CACHE:
+        return _ISO_CACHE[key]
+    cp = _iso_cache_path(mode, from_, buffer)
+    if cp.exists():
+        _ISO_CACHE[key] = _load(cp)
+        return _ISO_CACHE[key]
+    hub_min = {}
+    for h in HUBS:
+        ent = time_entry(mode, from_, f"hub:{h['id']}", buffer)
+        hub_min[h["id"]] = ent["minutes"]
+    # 等时圈按直线位移外推（非逐点路径规划），故用几何直线距离而非链路耗时
+    est_fn = EST_FN.get(mode) or drive_minutes
+    fc, meta = build_isochrone(hub_min, HUB_COORD, est_fn=est_fn,
+                               calib=ISO_CALIB.get(mode, 1.0))
+    meta.update({"mode": mode, "from": from_, "buffer": buffer,
+                 "source": "interpolated-contour",
+                 "hub_minutes": hub_min})
+    fc["meta"] = meta
+    ISO_CACHE_DIR.mkdir(exist_ok=True)
+    cp.write_text(json.dumps(fc, ensure_ascii=False), encoding="utf-8")
+    _ISO_CACHE[key] = fc
+    return fc
 
 
 # ---------- 真实路线几何（方案A：按需实调高德 + 磁盘缓存，无Key/失败回落直线） ----------

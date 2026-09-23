@@ -61,8 +61,9 @@ async function cached(key, url) {
   return cache.get(key);
 }
 
-export const getTimes = (fromSpec) =>
-  cached(`T|${fromSpec}`, `/api/times?from=${encodeURIComponent(fromSpec)}`);
+export const getTimes = (fromSpec, buffer) =>
+  cached(`T|${fromSpec}|${buffer}`,
+    `/api/times?from=${encodeURIComponent(fromSpec)}&buffer=${buffer}`);
 export const getIso = (fromSpec, mode, buffer) =>
   cached(`I|${fromSpec}|${mode}|${buffer}`,
     `/api/isochrone?from=${encodeURIComponent(fromSpec)}&mode=${mode}&buffer=${buffer}`);
@@ -98,8 +99,21 @@ export const MODE_HEX = {
   hsr: "#2b6cb8",
 };
 
-// 等时面色带（与 styles.css 图例一致）
-export const BAND_COLORS = ["#1a9850", "#91cf60", "#d9ef8b", "#fee08b", "#fc8d59", "#d73027"];
+// 等时面色带（与等时圈 v2 的 9 档阈值为一一对应；末档为 180′ 以上兜底色）
+export const BAND_THRESHOLDS = [15, 30, 45, 60, 90, 120, 150, 180];
+export const BAND_COLORS = [
+  "#1a9850", "#91cf60", "#d9ef8b", "#fee08b",
+  "#fc8d59", "#e2724a", "#d73027", "#a50026",
+  "#eceff2",   // 180′ 以上：极浅灰，仍覆盖图幅
+];
+export const BAND_LABELS = [...BAND_THRESHOLDS.map(t => `${t}′`), "180′+"];
+// 描边色：同色系压暗，用于让等时线边界清晰
+export const BAND_STROKE = [
+  "#0f6b38", "#5fa03c", "#a8bb52", "#c9b45c",
+  "#c96a3a", "#b8552f", "#a02020", "#6d0018",
+  "#d5d9de",
+];
+export const bandFillOpacity = (band) => (band === BAND_COLORS.length - 1 ? 0.22 : 0.42);
 
 export function statusInfo() {
   return fetch("/api/status").then(r => r.json());

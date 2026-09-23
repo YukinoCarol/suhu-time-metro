@@ -98,19 +98,15 @@ main { flex: 1; display: flex; min-height: 0; }
   border-color: #101820;
   color: #fff;
 }
-#isoLegend { left: 12px; bottom: 14px; }
-#isoLegend .bands { display: flex; align-items: center; gap: 5px; }
-#isoLegend span {
-  width: 22px; height: 10px; border-radius: 2px; display: inline-block;
+#isoLegend { left: 12px; bottom: 14px; max-width: 320px; }
+#isoLegend .bands { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+#isoLegend .band { display: inline-flex; align-items: center; gap: 4px; }
+#isoLegend .sw {
+  width: 16px; height: 11px; border-radius: 2px; display: inline-block;
+  border: 1px solid rgba(20, 27, 34, 0.25);
 }
-#isoLegend span:nth-of-type(1) { background: #1a9850; }
-#isoLegend span:nth-of-type(2) { background: #91cf60; }
-#isoLegend span:nth-of-type(3) { background: #d9ef8b; }
-#isoLegend span:nth-of-type(4) { background: #fee08b; }
-#isoLegend span:nth-of-type(5) { background: #fc8d59; }
-#isoLegend span:nth-of-type(6) { background: #d73027; }
-#isoLegend i { font-style: normal; font-size: 10.5px; color: var(--muted); margin-right: 4px; }
-#isoLegend p { font-size: 10.5px; color: var(--muted); margin-top: 4px; }
+#isoLegend em { font-style: normal; font-size: 10.5px; color: var(--muted); }
+#isoLegend p { font-size: 10.5px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
 
 /* ---------- 右栏：时间地铁 ---------- */
 .panelHead h2 { font-size: 15px; }

@@ -2,7 +2,7 @@
 import {
   state, HUBS, HUB_COORD, HUB_BY_ID, initHubs, specOf, nameOf,
   getTimes, getIso, getRoute, getRouteGeo, MODES, MODE_NAME, MODE_HEX,
-  BAND_COLORS, statusInfo, smoothLine,
+  BAND_COLORS, BAND_STROKE, BAND_LABELS, statusInfo, smoothLine,
   FAVORITES, favValue, favOfValue, isFavoriteCoord,
 } from "./core.js";
 import { renderMetro } from "./metro.js";
@@ -163,16 +163,28 @@ function onMapLoad() {
     paint: {
       "fill-color": [
         "match", ["get", "band"],
-        0, BAND_COLORS[0], 1, BAND_COLORS[1], 2, BAND_COLORS[2],
-        3, BAND_COLORS[3], 4, BAND_COLORS[4], 5, BAND_COLORS[5],
-        "#e0e0e0",
+        ...BAND_COLORS.flatMap((c, i) => [i, c]),
+        "#eceff2",
       ],
       "fill-opacity": [
         "match", ["get", "band"],
-        5, 0.0,  // 90′ 以上不填充，避免整幅矩形色块
-        0.32,
+        BAND_COLORS.length - 1, 0.22,
+        0.42,
       ],
       "fill-antialias": false,
+    },
+  });
+  // 等时线描边：让每档边界清晰（矢量化后才有意义）
+  map.addLayer({
+    id: "iso-line", type: "line", source: "iso", beforeId: "hub-circle",
+    paint: {
+      "line-color": [
+        "match", ["get", "band"],
+        ...BAND_STROKE.flatMap((c, i) => [i, c]),
+        "#d5d9de",
+      ],
+      "line-width": 1.1,
+      "line-opacity": 0.55,
     },
   });
 
@@ -308,6 +320,18 @@ function syncHubLabelVis() {
   }
 }
 
+function renderLegend() {
+  const box = $("isoLegend");
+  if (!box) return;
+  const bands = BAND_COLORS.map((c, i) => `
+    <span class="band">
+      <i class="sw" style="background:${c};border-color:${BAND_STROKE[i]}"></i>
+      <em>${BAND_LABELS[i]}</em>
+    </span>`).join("");
+  box.innerHTML = `<div class="bands">${bands}</div>
+    <p>等时面：枢纽实测时间 + 距离外推 → 细格网（约 500m）等值线矢量化，示意用</p>`;
+}
+
 /* ---------- 右栏 ---------- */
 
 function renderCompare(geoRoute) {
@@ -353,7 +377,7 @@ function renderCompare(geoRoute) {
       const nm = (id) => (HUB_BY_ID[id] || {}).name || id;
       html += `<div class="brk">
         <div><span class="k">${nameOf(state.origin)} → ${nm(d.station_from)}</span><span class="v">${d.access_from}′</span></div>
-        <div><span class="k">候车缓冲</span><span class="v">${d.buffer}′</span></div>
+        <div><span class="k">候车（含缓冲 ${d.buffer}′）</span><span class="v">${d.wait ?? d.buffer}′</span></div>
         <div><span class="k">${d.train.no} ${d.train.dep}→${d.train.arr}${d.next_day ? "（次日）" : ""}</span><span class="v">${d.ride}′</span></div>
         <div><span class="k">${nm(d.station_to)} → ${nameOf(state.dest)}</span><span class="v">${d.access_to}′</span></div>
       </div>`;
@@ -400,7 +424,7 @@ async function refresh() {
   const fromSpec = specOf(state.origin);
   const toSpec = specOf(state.dest);
   try {
-    timesData = await getTimes(fromSpec);
+    timesData = await getTimes(fromSpec, state.buffer);
     if (seq !== refreshSeq) return;
     renderMetro(d3.select("#metro"), {
       hubs: enrichedHubs(),
@@ -459,6 +483,7 @@ async function init() {
   fillSelect("selOrigin");
   fillSelect("selDest");
   renderChips();
+  renderLegend();
   initMap();
 
   $("selOrigin").onchange = (e) => setOrigin(selToPoint(e.target.value));
